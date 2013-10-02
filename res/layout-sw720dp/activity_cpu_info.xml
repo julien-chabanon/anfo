@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget54"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    >
+
+
+    <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="750dp"
+            android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            
+            
+
+            
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageViewMax"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cpumax" />
+
+
+            <TextView
+                android:id="@+id/textViewMax"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="loading..."
+                android:textSize="30dp"
+                android:textColor="#686A69"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        
+
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageViewMin"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cpumin" />
+
+
+            <TextView
+                android:id="@+id/textViewMin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="loading..."
+                android:textColor="#686A69"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageViewCurrent"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cpucurrent" />
+
+
+            <TextView
+                android:id="@+id/textViewCurrent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="loading..."
+                android:textColor="#686A69"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/cpuuse" />
+        
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="510dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:progressDrawable="@layout/shape_progress_bar" />
+
+        <TextView
+            android:id="@+id/textViewUseCpuInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#686A69"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold" 
+            android:text="%" />
+
+    </LinearLayout>
+    
+    
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageViewPercentProcesses"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/governor" />
+
+
+            <TextView
+                android:id="@+id/textViewGovernor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="loading..."
+                android:textSize="30dp"
+                android:textColor="#686A69"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        
+     
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageViewPercentProcesses"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cpuprocessesuse" />
+
+
+            <TextView
+                android:id="@+id/textViewPercentProcesses"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#686A69"
+                android:gravity="center"
+                android:text="loading..."
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        
+     
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageViewProcessesNumbers"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cpuprocessesnumber" />
+
+
+            <TextView
+                android:id="@+id/textViewProcessesNumbers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="loading..."
+                android:textColor="#686A69"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        
+     
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageViewBogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cpubogo" />
+
+
+            <TextView
+                android:id="@+id/textViewBogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="loading..."
+                android:textColor="#686A69"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+            
+            
+            
+         
+            
+        </LinearLayout>
+</ScrollView>

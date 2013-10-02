@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCCC"
+    android:gravity="center"
+    android:orientation="vertical">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="vertical"
+    		android:padding="15dip">
+            
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingBottom="10dip">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/shape_card"
+            android:gravity="center"
+            android:orientation="vertical" 
+            android:padding="10dip">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:paddingBottom="10dip">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold|italic"
+                    android:textSize="20sp"
+                     android:textColor="#686A69"
+                    android:text="Internal SD" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:paddingBottom="10dip">
+
+                <ImageView
+                    android:id="@+id/imageViewInternalMax"
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                    android:src="@drawable/sdcardinternalavalaible" />
+
+                <TextView
+                    android:id="@+id/textViewInternalMin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="loading..."
+                    android:textSize="20dp"
+                     android:textColor="#686A69"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:paddingBottom="10dip">
+
+                <ImageView
+                    android:id="@+id/imageViewMin"
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                    android:src="@drawable/sdcardinternaltotal" />
+
+                <TextView
+                    android:id="@+id/textViewInternalMax"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="loading..."
+                    android:textSize="20dp"
+                     android:textColor="#686A69"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+		
+
+                <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		
+		        <ProgressBar
+		            android:id="@+id/progressBarSdInternal"
+		            style="?android:attr/progressBarStyleHorizontal"
+		            android:layout_width="0dip"
+		            android:layout_height="20dp"
+		            android:layout_gravity="center" 
+		            android:layout_weight="1"
+		            android:progressDrawable="@layout/shape_progress_bar" />
+		
+		
+		
+		
+		        <TextView
+		            android:id="@+id/textViewProgressBarSdInternal"
+		            android:layout_width="48dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		             android:textColor="#686A69"
+		            android:text="%" />
+
+    			</LinearLayout>
+          
+        </LinearLayout>
+    </RelativeLayout>
+    
+            
+            
+            
+            
+            
+            
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/shape_card"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dip" >
+                
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:paddingBottom="10dip">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold|italic"
+                    android:textSize="20sp"
+                     android:textColor="#686A69"
+                    android:text="External SD" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:paddingBottom="10dip">
+
+                <ImageView
+                    android:id="@+id/imageViewCurrent"
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                    android:src="@drawable/sdcardexternalavalaible" />
+
+                <TextView
+                    android:id="@+id/textViewExternalMin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                     android:textColor="#686A69"
+                    android:text="loading..."
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:paddingBottom="10dip">
+
+                <ImageView
+                    android:id="@+id/imageViewPercentProcesses"
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                    android:src="@drawable/sdcardexternaltotal" />
+
+                <TextView
+                    android:id="@+id/textViewExternalMax"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="loading..."
+                     android:textColor="#686A69"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            
+            <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		
+		        <ProgressBar
+		            android:id="@+id/progressBarSdExternal"
+		            style="?android:attr/progressBarStyleHorizontal"
+		            android:layout_width="0dip"
+		            android:layout_height="20dp"
+		            android:layout_gravity="center" 
+		            android:layout_weight="1"
+		            android:progressDrawable="@layout/shape_progress_bar" />
+		
+		
+		        <TextView
+		            android:id="@+id/textViewProgressBarSdExternal"
+		            android:layout_width="48dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		             android:textColor="#686A69"
+		            android:text="%" />
+
+    			</LinearLayout>
+    			
+        </LinearLayout>
+    </RelativeLayout>
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+    
+</LinearLayout>

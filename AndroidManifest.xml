@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="MaximumWidget.com"
+    android:installLocation="auto"
+    android:versionCode="73"
+    android:versionName="2.5" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+    <application
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <receiver
+            android:name="maximum.widget.com.widgetBG"
+            android:label="Anfo MAXIMUM" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/info" />
+        </receiver>
+        <receiver
+            android:name="cpuram.widgetCPUandRAM"
+            android:label="Anfo CPU/RAM" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/info_cpu_and_ram" />
+        </receiver>
+        <receiver
+            android:name="battery.only.BatteryOnly"
+            android:label="Anfo Battery" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/info_battery_only" />
+        </receiver>
+        <receiver
+            android:name="toggle.ToggleWidget"
+            android:label="Anfo Toggle" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/info_toggle" />
+        </receiver>
+        <receiver
+            android:name="cpu.only.CpuOnly"
+            android:label="Anfo CPU only" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/info_cpu_only" />
+        </receiver>
+        <receiver
+            android:name="storage.StorageWidget"
+            android:label="Anfo SD card" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/info_sd_card_widget" />
+        </receiver>
+        <receiver
+            android:name="all.in.one.AllWidget"
+            android:label="Anfo All in One" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/info_all" />
+        </receiver>
+        <receiver
+            android:name="core.only.WidgetCore"
+            android:label="Anfo CPU Core" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/info_core" />
+        </receiver>
+        <receiver android:name="toggle.AlarmManagerBroadcastReceiver" />
+        <receiver android:name="battery.only.AlarmManagerBroadcastReceiver" />
+        <receiver android:name="cpuram.AlarmManagerBroadcastReceiver" />
+        <receiver android:name="maximum.widget.com.AlarmManagerBroadcastReceiver" />
+        <receiver android:name="application.AlarmNotification" />
+        <receiver android:name="cpu.only.AlarmManagerBroadcastReceiver" />
+        <receiver android:name="storage.AlarmManagerBroadcastReceiver" />
+        <receiver android:name="all.in.one.AlarmManagerBroadcastReceiver" />
+        <receiver android:name="core.only.AlarmManagerBroadcastReceiver" />
+        <receiver android:name="application.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="maximum.widget.com.battery"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="battery.only.battery"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="all.in.one.battery"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="maximum.widget.com.dataService"
+            android:label="@string/app_name" />
+        <service
+            android:name="maximum.widget.com.WifiService"
+            android:label="@string/app_name" />
+        <service
+            android:name="maximum.widget.com.BluetoothService"
+            android:label="@string/app_name" />
+
+        <receiver
+            android:name="maximum.widget.com.data_receiver"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="maximum.widget.com.WifiReceiver"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="maximum.widget.com.BluetoothReceiver"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="maximum.widget.com.GpsReceiver"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="toggle.dataService"
+            android:label="@string/app_name" />
+        <service
+            android:name="toggle.WifiService"
+            android:label="@string/app_name" />
+        <service
+            android:name="toggle.BluetoothService"
+            android:label="@string/app_name" />
+
+        <receiver
+            android:name="toggle.data_receiver"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="toggle.WifiReceiver"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="toggle.BluetoothReceiver"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="toggle.GpsReceiver"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="maximum.widget.com.brightness"
+            android:label="Brightness Control"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomDialogAnimationTheme" >
+        </activity>
+        <activity
+            android:name="toggle.brightness"
+            android:label="Brightness Control"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomDialogAnimationTheme" >
+        </activity>
+        <activity
+            android:name="maximum.widget.com.ControlCore"
+            android:label="Control active core"
+            android:screenOrientation="sensor"
+            android:theme="@style/CustomDialogAnimationTheme" >
+        </activity>
+        <activity
+            android:name="application.ControlCore"
+            android:label="Control active core"
+            android:screenOrientation="portrait"
+            android:theme="@style/DownUpActivity_back" >
+        </activity>
+        <activity
+            android:name="maximum.widget.com.CpuInfo"
+            android:label="CPU&apos;s informations"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomDialogAnimationTheme" >
+        </activity>
+        <activity
+            android:name="application.Overclock"
+            android:label="Manage Frequency"
+            android:screenOrientation="portrait"
+            android:theme="@style/DownUpActivity_back" >
+        </activity>
+        <activity
+            android:name="application.CpuInfo"
+            android:label="CPU&apos;s informations"
+            android:screenOrientation="portrait"
+            android:theme="@style/DownUpActivity_back" >
+        </activity>
+        <activity
+            android:name="application.Main"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/DownUpActivity_back" >
+        </activity>
+        <activity
+            android:name="maximum.widget.com.RamUse"
+            android:label="@string/title_activity_ram_use"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomDialogAnimationTheme" >
+        </activity>
+        <activity
+            android:name="application.RamUse"
+            android:label="@string/title_activity_ram_use"
+            android:screenOrientation="portrait"
+            android:theme="@style/DownUpActivity_back" >
+        </activity>
+        <activity
+            android:name="maximum.widget.com.BetteryInfoDisplay"
+            android:label="@string/title_activity_bettery_info_display" >
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="application.Wireless"
+            android:label="@string/title_activity_bettery_info_display"
+            android:theme="@style/DownUpActivity_back" >
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cpuram.widgetCPUandRAM"
+            android:label="@string/title_activity_widget_cpuand_ram"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="application.SystemePanel"
+            android:label="@string/title_activity_systeme_panel"
+            android:screenOrientation="portrait"
+            android:theme="@style/DownUpActivity_back" >
+        </activity>
+        <activity
+            android:name="application.NotificationConfig"
+            android:label="@string/title_activity_notification_config"
+            android:screenOrientation="portrait"
+            android:theme="@style/DownUpActivity_back" >
+        </activity>
+        <activity
+            android:name="application.Disk"
+            android:label="@string/title_activity_disk"
+            android:screenOrientation="portrait"
+            android:theme="@style/DownUpActivity_back" >
+        </activity>
+        <activity
+            android:name="storage.Disk"
+            android:label="@string/title_activity_storage_widget"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomDialogAnimationTheme" >
+        </activity>
+        <activity
+            android:name="core.only.CoreSwitch"
+            android:label="@string/title_activity_core_switch"
+            android:theme="@style/CustomDialogAnimationTheme" >
+        </activity>
+        <activity
+            android:name="application.CPUStatActivity"
+            android:label="@string/title_activity_cpustat"
+            android:theme="@style/DownUpActivity_back" >
+        </activity>
+        <activity
+            android:name="application.CPUstatSmall"
+            android:label="@string/title_activity_cpustat_small"
+            android:theme="@style/CustomDialogAnimationTheme" >
+        </activity>
+        <activity
+            android:name="maximum.widget.com.SdCard"
+            android:label="SD Card"
+            android:theme="@style/CustomDialogAnimationTheme" >
+        </activity>
+        <activity
+            android:name="maximum.widget.com.Network"
+            android:label="Network Info"
+            android:theme="@style/CustomDialogAnimationTheme" >
+        </activity>
+        <activity
+            android:name="application.SmashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/DownUpActivity_back" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="application.AnfoPremium"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_anfo_premium"
+            android:theme="@style/DownUpActivity_back" >
+        </activity>
+        <activity
+            android:name="application.HomeCards"
+            android:label="Home"
+            android:screenOrientation="portrait"
+            android:theme="@style/DownUpActivity_back" >
+        </activity>
+        <activity
+            android:name="application.SliderActivity"
+            android:label="Anfo Widget"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PageIndicatorDefaults" >
+        </activity>
+
+        <!--
+      TAB INDICATOR 
+        <activity
+            android:name=".SampleTabsDefault"
+            android:label="Tabs/Default"
+            android:theme="@style/Theme.PageIndicatorDefaults">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SampleTabsStyled"
+            android:label="Tabs/Styled"
+            android:theme="@style/StyledIndicators">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+      <activity
+          android:name=".SampleTabsWithIcons"
+          android:label="Tabs/With Icons"
+          android:theme="@style/StyledIndicators">
+        <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+        </intent-filter>
+      </activity>
+        -->
+        <activity
+            android:name="application.AboutMe"
+            android:label="@string/title_activity_about_me" >
+        </activity>
+    </application>
+
+</manifest>

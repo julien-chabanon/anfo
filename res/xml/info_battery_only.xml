@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+   		 android:minWidth="100dp"
+    	 android:minHeight="100dp"
+   		 android:updatePeriodMillis="1"
+   		 android:previewImage="@drawable/ar100"
+   		 android:initialLayout="@layout/activity_widget_battery_only"
+   		 android:resizeMode="none"
+   		 
+/>
+

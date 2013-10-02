@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style
+		name="AnusAnim"
+		parent="@android:style/Theme.Holo">
+		<item name="android:windowAnimationStyle">@style/AnusAnim</item>
+	</style>
+	
+	<style
+		name="SlidingActivity"
+		parent="@android:style/Theme.Holo">
+		<item name="android:windowAnimationStyle">@style/slideAnimation</item>
+	</style>
+	
+	<style
+		name="DownUpActivity_back"
+		parent="@android:style/Theme.Holo.Light">
+		<item name="android:windowAnimationStyle">@style/DownUpActivity_back</item>
+	</style>
+	
+	<style name="CustomDialogAnimationTheme" parent="@android:style/Theme.Holo.Light.Dialog">
+		<item name="android:windowAnimationStyle">@style/CustomDialogAnim</item>
+	</style>
+</resources>
+ 
+    

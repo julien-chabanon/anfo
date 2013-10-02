@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget54"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:orientation="vertical">
+
+         <LinearLayout
+            android:id="@+id/LayoutCPU0"
+            android:layout_width="match_parent"
+            android:layout_height="54dp" >
+
+            <TextView
+                android:id="@+id/textViewCPU0"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"
+                android:gravity="center"
+                android:text=" CPU0 "
+                android:textSize="40dp"
+                android:textColor="#686A69"
+                android:textStyle="bold" />
+            
+            <LinearLayout
+                android:id="@+id/LayoutCPU0Details"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewCPU0details"
+                    android:layout_width="410dp"
+                    android:layout_height="67dp"
+                    android:layout_weight="0.38"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="loading..." />
+
+                <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="0.02"
+		        android:orientation="horizontal" >
+		
+		        <ProgressBar
+		            android:id="@+id/progressBarCPU0"
+		            style="?android:attr/progressBarStyleHorizontal"
+		            android:layout_width="0dip"
+		            android:layout_height="20dp"
+		            android:layout_gravity="center"
+		            android:layout_weight="0.02"
+		            android:progressDrawable="@layout/shape_progress_bar" />
+		
+		        <TextView
+		            android:id="@+id/textViewUseCpu0Info"
+		            android:layout_width="60dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		            android:textSize="20dp"
+		            android:text="%" />
+
+    			</LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/LayoutCPU1"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textViewCPU1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="40dp"
+                android:textColor="#686A69"
+                android:textStyle="bold"
+                android:text=" CPU1 " />
+
+            <LinearLayout
+                android:id="@+id/LayoutCPU1Details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewCPU1details"
+                    android:layout_width="410dp"
+                    android:layout_height="67dp"
+                    android:layout_weight="0.38"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="loading..." />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.02"
+                    android:orientation="horizontal" >
+
+                    <ProgressBar
+                        android:id="@+id/progressBarCPU1"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dip"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.78"
+                        android:progressDrawable="@layout/shape_progress_bar" />
+
+                    <TextView
+                        android:id="@+id/textViewUseCpu1Info"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="%" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:id="@+id/LayoutCPU2"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textViewCPU2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:textColor="#686A69"
+                android:text=" CPU2 " />
+
+            <LinearLayout
+                android:id="@+id/LayoutCPU2Details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewCPU2details"
+                    android:layout_width="410dp"
+                    android:layout_height="67dp"
+                    android:layout_weight="0.38"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="loading..." />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.02"
+                    android:orientation="horizontal" >
+		
+		        <ProgressBar
+                        android:id="@+id/progressBarCPU2"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dip"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.78"
+                        android:progressDrawable="@layout/shape_progress_bar" />
+		
+		        <TextView
+		            android:id="@+id/textViewUseCpu2Info"
+		            android:layout_width="60dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		             android:textSize="20sp"
+		            android:text="%" />
+
+    			</LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:id="@+id/LayoutCPU3"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textViewCPU3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:textColor="#686A69"
+                android:text=" CPU3 " />
+
+            <LinearLayout
+                android:id="@+id/LayoutCPU3Details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewCPU3details"
+                    android:layout_width="410dp"
+                    android:layout_height="67dp"
+                    android:layout_weight="0.38"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="loading..." />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.02"
+                    android:orientation="horizontal" >
+		
+		        <ProgressBar
+                        android:id="@+id/progressBarCPU3"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dip"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.78"
+                        android:progressDrawable="@layout/shape_progress_bar" />
+		
+		        <TextView
+		            android:id="@+id/textViewUseCpu3Info"
+		            android:layout_width="60dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		             android:textSize="20sp"
+		            android:text="%" />
+
+    			</LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="5dp">
+            
+            </LinearLayout>
+        
+        
+
+    </LinearLayout>
+    
+    </ScrollView>

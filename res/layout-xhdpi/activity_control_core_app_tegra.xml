@@ -1,0 +1,434 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#CCCCCC"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="340dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@layout/shape_card"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            
+            
+            
+            
+            <LinearLayout
+            android:id="@+id/LayoutCPU0"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0.21" >
+
+            <Button
+                android:id="@+id/buttonSingleCore"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.21"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#686A69"
+                android:text="SingleCore"/>
+ 
+            
+            <Button
+                android:id="@+id/buttonDualCore"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.21"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#686A69"
+                android:text="DualCore" />
+            
+            <Button
+                android:id="@+id/buttonTripleCore"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.21"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#686A69"
+                android:text="TripleCore" />
+            
+             <Button
+                android:id="@+id/buttonQuadCore"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.21"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#686A69"
+                android:text="QuadCore" />
+             
+             </LinearLayout>
+             
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+        
+            <CheckBox
+                android:id="@+id/checkBoxSetOnBootCore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#686A69"
+                android:text="Set on boot" />
+            
+        
+            
+            
+        </LinearLayout>
+            
+           
+            
+            
+            
+            
+            
+            
+            
+            
+        </LinearLayout>
+    </RelativeLayout>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="340dp"
+            android:layout_height="340dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@layout/shape_card"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            
+            
+            
+            
+            
+            
+            
+
+        <LinearLayout
+            android:id="@+id/LayoutCPU0"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textViewCPU0"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"
+                android:gravity="center"
+                android:text=" CPU0 "
+                android:textSize="30dp"
+                android:textColor="#686A69"
+                android:textStyle="bold" />
+            
+            <LinearLayout
+                android:id="@+id/LayoutCPU0Details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewCPU0details"
+                    android:layout_width="270dp"
+                    android:layout_height="67dp"
+                    android:layout_weight="0.38"
+                    android:gravity="center"
+                    android:textColor="#686A69"
+                    android:text="loading..." />
+
+                <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		
+		
+				<ProgressBar 
+ 					android:layout_width="200dp"
+		            android:layout_height="20dp"
+		            android:layout_gravity="center"
+		            android:indeterminate="false" 
+		            style="?android:attr/progressBarStyleHorizontal" 
+		            android:progress="50" 
+		            android:progressDrawable="@layout/shape_progress_bar" 
+		            android:maxHeight="10dip" 
+		            android:minHeight="10dip" 
+		            android:id="@+id/progressBarCPU0"/>
+		
+		
+		        <TextView
+		            android:id="@+id/textViewUseCpu0Info"
+		            android:layout_width="48dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		            android:textColor="#686A69"
+		            android:text="%" />
+
+    			</LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/LayoutCPU1"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textViewCPU1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="#686A69"
+                android:textStyle="bold"
+                android:text=" CPU1 " />
+
+            <LinearLayout
+                android:id="@+id/LayoutCPU1Details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewCPU1details"
+                    android:layout_width="270dp"
+                    android:layout_height="67dp"
+                    android:layout_weight="0.38"
+                    android:textColor="#686A69"
+                    android:gravity="center"
+                    android:text="loading..." />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.02"
+                    android:orientation="horizontal" >
+		
+		        <ProgressBar
+		            android:id="@+id/progressBarCPU1"
+		            android:layout_width="200dp"
+		            android:layout_height="20dp"
+		            android:layout_gravity="center"
+		            android:indeterminate="false" 
+		            style="?android:attr/progressBarStyleHorizontal" 
+		            android:progress="50" 
+		            android:progressDrawable="@layout/shape_progress_bar" 
+		            android:maxHeight="10dip" 
+		            android:minHeight="10dip" />
+		
+		        <TextView
+		            android:id="@+id/textViewUseCpu1Info"
+		            android:layout_width="48dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		            android:textColor="#686A69"
+		            android:text="%" />
+
+    			</LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:id="@+id/LayoutCPU2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textViewCPU2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#686A69"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text=" CPU2 " />
+
+            <LinearLayout
+                android:id="@+id/LayoutCPU2Details"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewCPU2details"
+                    android:layout_width="270dp"
+                    android:layout_height="67dp"
+                    android:layout_weight="0.38"
+                    android:gravity="center"
+                    android:textColor="#686A69"
+                    android:text="loading..." />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.02"
+                    android:orientation="horizontal" >
+		
+		        <ProgressBar
+		            android:id="@+id/progressBarCPU2"
+		            android:layout_width="200dp"
+		            android:layout_height="20dp"
+		            android:layout_gravity="center"
+		            android:indeterminate="false" 
+		            style="?android:attr/progressBarStyleHorizontal" 
+		            android:progress="50" 
+		            android:progressDrawable="@layout/shape_progress_bar" 
+		            android:maxHeight="10dip" 
+		            android:minHeight="10dip" />
+		
+		        <TextView
+		            android:id="@+id/textViewUseCpu2Info"
+		            android:layout_width="48dp"
+		            android:textColor="#686A69"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		            android:text="%" />
+
+    			</LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:id="@+id/LayoutCPU3"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textViewCPU3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#686A69"
+                android:text=" CPU3 " />
+
+            <LinearLayout
+                android:id="@+id/LayoutCPU3Details"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"  
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textViewCPU3details"
+                    android:layout_width="270dp"
+                    android:layout_height="67dp"
+                    android:layout_weight="0.38"
+                    android:textColor="#686A69"
+                    android:gravity="center"
+                    android:text="loading..." />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.02"
+                    android:orientation="horizontal" >
+		
+		        <ProgressBar
+		            android:id="@+id/progressBarCPU3"
+		            android:layout_width="200dp"
+		            android:layout_height="20dp"
+		            android:layout_gravity="center"
+		            android:indeterminate="false" 
+		            style="?android:attr/progressBarStyleHorizontal" 
+		            android:progress="50" 
+		            android:progressDrawable="@layout/shape_progress_bar" 
+		            android:maxHeight="10dip" 
+		            android:minHeight="10dip" />
+		
+		        <TextView
+		            android:id="@+id/textViewUseCpu3Info"
+		            android:layout_width="48dp"
+		            android:layout_height="match_parent"
+		            android:textColor="#686A69"
+		            android:gravity="center"
+		            android:text="%" />
+
+    			</LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+            
+            
+            
+            
+            
+            
+            
+            
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

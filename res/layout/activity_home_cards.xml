@@ -1,0 +1,734 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#CCCCCC"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollCardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:orientation="vertical" 
+            android:padding="15dip">
+            
+            
+            
+            
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:paddingBottom="10dip">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@layout/shape_card"
+                    android:padding="10dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/batteryViewImg"
+                                android:layout_width="100dip"
+                                android:layout_height="100dip"
+                                android:paddingBottom="10dip"
+                                android:paddingRight="10dip"
+                                android:layout_gravity="center"
+                                android:src="@drawable/a60" />
+
+                            <TextView
+                                android:id="@+id/BatteryAct1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="50%"
+                                android:textColor="#686A69"
+                                android:textSize="60sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" 
+                            android:paddingBottom="10dip">
+
+                            <TextView
+                                android:id="@+id/BatteryAct2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="loading..."
+                                android:textColor="#686A69"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+                        
+                        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		
+		        <ProgressBar
+		            android:id="@+id/progressBarBattery"
+		            style="?android:attr/progressBarStyleHorizontal"
+		            android:layout_width="0dip"
+		            android:layout_height="20dp"
+		            android:layout_gravity="center" 
+		            android:layout_weight="1"
+		            android:progressDrawable="@layout/shape_progress_bar" />
+		
+		
+		
+		
+		        <TextView
+		            android:id="@+id/textViewProgressBarBattery"
+		            android:layout_width="48dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		             android:textColor="#686A69"
+		            android:text="%" />
+
+    			</LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:paddingBottom="10dip">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@layout/shape_card"
+                    android:padding="10dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                      	android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+                            
+                            <ImageView
+                                android:id="@+id/batteryViewAct"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:paddingBottom="10dip"
+                                android:paddingRight="10dip"
+                                android:layout_gravity="center"
+                                android:src="@drawable/cpuuse" />
+
+                            <TextView
+                                android:id="@+id/CardCPUpourcent"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="10%"
+                                android:textColor="#686A69"
+                                android:textSize="60sp" />
+                            
+                            
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical" 
+                            android:paddingBottom="10dip">
+                            
+                            
+                            <TextView
+                                android:id="@+id/CardCPUNow"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Current frequency: 0 MHz"
+                                android:textColor="#686A69"
+                                android:textSize="20dp" />
+                            
+                            <TextView
+                                android:id="@+id/CardCPUAverage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Average: 0 MHz"
+                                android:textColor="#686A69"
+                                android:textSize="20dp" />
+                            
+                            <TextView
+                                android:id="@+id/CardCoreActiv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Core allowed: 2/4"
+                                android:textColor="#686A69"
+                                android:textSize="20dp" />
+                            
+                        </LinearLayout>  
+                        
+                        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		
+		        <ProgressBar
+		            android:id="@+id/progressBarSdCpuMenu"
+		            style="?android:attr/progressBarStyleHorizontal"
+		            android:layout_width="0dip"
+		            android:layout_height="20dp"
+		            android:layout_gravity="center" 
+		            android:layout_weight="1"
+		            android:progressDrawable="@layout/shape_progress_bar" />
+		
+		
+		
+		
+		        <TextView
+		            android:id="@+id/textViewProgressBarCpuMenuText"
+		            android:layout_width="48dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		             android:textColor="#686A69"
+		            android:text="%" />
+
+    			</LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:paddingBottom="10dip">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@layout/shape_card"
+                    android:padding="10dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+                            
+                            
+                            <ImageView
+                                android:id="@+id/batteryViewAct"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center"
+                                android:paddingBottom="10dip"
+                                android:paddingRight="10dip"
+                                android:src="@drawable/ramusingmo" />
+
+                            <TextView
+                                android:id="@+id/CardRamPourcent"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="80%"
+                                android:textColor="#686A69"
+                                android:textSize="60sp" />
+                            
+                            
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical" 
+                            android:paddingBottom="10dip">
+
+                            <TextView
+                                android:id="@+id/CardRamTotal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Total: 0 Mo"
+                                android:textColor="#686A69"
+                                android:textSize="20dp" />
+                            
+                            <TextView
+                                android:id="@+id/CardRamUse"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Use: 0 Mo"
+                                android:textColor="#686A69"
+                                android:textSize="20dp" />
+                            
+                            <TextView
+                                android:id="@+id/CardRamFree"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Free: 0 Mo"
+                                android:textColor="#686A69"
+                                android:textSize="20dp" />
+                            
+                        </LinearLayout> 
+                        
+                        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		
+		        <ProgressBar
+		            android:id="@+id/progressBarRamMenu"
+		            style="?android:attr/progressBarStyleHorizontal"
+		            android:layout_width="0dip"
+		            android:layout_height="20dp"
+		            android:layout_gravity="center" 
+		            android:layout_weight="1"
+		            android:progressDrawable="@layout/shape_progress_bar" />
+		
+		
+		
+		
+		        <TextView
+		            android:id="@+id/textViewProgressBarRamMenu"
+		            android:layout_width="48dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		             android:textColor="#686A69"
+		            android:text="%" />
+
+    			</LinearLayout>
+                        
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:paddingBottom="10dip">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:background="@layout/shape_card"
+                    android:orientation="vertical" >
+                    
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/wirelessIConTitle"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:paddingBottom="10dip"
+                                android:paddingRight="10dip"
+                                android:layout_gravity="center"
+                                android:src="@drawable/wireless" />
+
+                            <TextView
+                                android:id="@+id/dataTitleText"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="wireless"
+                                android:textColor="#686A69"
+                                android:textSize="40dp" />
+                        </LinearLayout>
+                        
+                        
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:orientation="horizontal" >
+                            </LinearLayout>
+                        
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+                            
+                            <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/data3gIConTitle"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/dataactive" />
+
+                            <TextView
+                                android:id="@+id/data3gTitleText"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="50%"
+                                android:textColor="#686A69"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+                        
+                        
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:orientation="horizontal" >
+                            </LinearLayout>
+                       
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+                            
+                            
+                            
+                            <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/dataIcon"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/wifiactive" />
+
+                            <TextView
+                                android:id="@+id/dataText"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="50%"
+                                android:textColor="#686A69"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:orientation="horizontal" >
+                            </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+                            
+                            
+                            <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/bluetoothIconCard"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/bluetoothoff" />
+
+                            <TextView
+                                android:id="@+id/BluetoothText"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="OFF"
+                                android:textColor="#686A69"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:orientation="horizontal" >
+                            </LinearLayout>
+                        
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+                            
+                            <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/gpsIcon"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/gpsoff" />
+
+                            <TextView
+                                android:id="@+id/gpsText"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="OFF"
+                                android:textColor="#686A69"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+                        
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+            
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:paddingBottom="10dip">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@layout/shape_card"
+                    android:padding="10dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical" 
+                        android:paddingBottom="10dip">
+                        
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" 
+                            android:paddingBottom="10dip">
+                            
+
+                            <ImageView
+                                android:id="@+id/brightnessIcon"
+                                android:layout_width="90dip"
+                                android:layout_height="90dip"
+                                android:layout_gravity="center"
+                                android:src="@drawable/brightness_icon" />
+
+                            <TextView
+                                android:id="@+id/brightnessText"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="50%"
+                                android:textColor="#686A69"
+                                android:textSize="60sp" />
+                        </LinearLayout>
+                        
+                        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		
+		        <ProgressBar
+		            android:id="@+id/progressBarBrightness"
+		            style="?android:attr/progressBarStyleHorizontal"
+		            android:layout_width="0dip"
+		            android:layout_height="20dp"
+		            android:layout_gravity="center" 
+		            android:layout_weight="1"
+		            android:progressDrawable="@layout/shape_progress_bar" />
+		
+		
+		
+		
+		        <TextView
+		            android:id="@+id/textViewProgressBarBrightnessText"
+		            android:layout_width="48dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		             android:textColor="#686A69"
+		            android:text="%" />
+
+    			</LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+            
+            
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:paddingBottom="10dip">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@layout/shape_card"
+                    android:padding="10dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+                        
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:orientation="horizontal" >
+                            
+                            
+                            
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+                            
+                            
+                            <ImageView
+                                android:id="@+id/batteryViewAct"
+                                android:layout_width="90dip"
+                                android:layout_height="90dip"
+                                android:paddingBottom="10dip"
+                                android:paddingRight="10dip"
+                                android:layout_gravity="center"
+                                android:src="@drawable/sdcardinternalavalaible" />
+
+                            <TextView
+                                android:id="@+id/CardSDCardPourcent"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="62%"
+                                android:textColor="#686A69"
+                                android:textSize="60sp" />
+                            
+                            
+                        </LinearLayout>
+                        
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical" 
+                            android:paddingBottom="10dip">
+
+                            <TextView
+                                android:id="@+id/CardSDCardTotal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Total: 0 Mo"
+                                android:textColor="#686A69"
+                                android:textSize="20dp" />
+                            
+                            <TextView
+                                android:id="@+id/CardSDCardUse"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Use: 0 Mo"
+                                android:textColor="#686A69"
+                                android:textSize="20dp" />
+                            
+                            <TextView
+                                android:id="@+id/CardSDCardFree"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Free: 0 Mo"
+                                android:textColor="#686A69"
+                                android:textSize="20dp" />
+                            
+                        </LinearLayout> 
+                        
+                    </LinearLayout>
+                    
+                    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		
+		        <ProgressBar
+		            android:id="@+id/progressBarSdInternalMenu"
+		            style="?android:attr/progressBarStyleHorizontal"
+		            android:layout_width="0dip"
+		            android:layout_height="20dp"
+		            android:layout_gravity="center" 
+		            android:layout_weight="1"
+		            android:progressDrawable="@layout/shape_progress_bar" />
+		
+		
+		
+		
+		        <TextView
+		            android:id="@+id/textViewProgressBarSdInternalMenu"
+		            android:layout_width="48dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		             android:textColor="#686A69"
+		            android:text="%" />
+
+    			</LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

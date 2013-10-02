@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style
+		name="AnusAnim"
+		parent="@android:style/Animation.Activity">
+		<item name="android:activityOpenEnterAnimation">@android:anim/fade_in</item>
+		<item name="android:activityOpenExitAnimation">@anim/@android:anim/fade_out</item>
+		<item name="android:activityCloseExitAnimation">@android:anim/fade_out</item>
+		<item name="android:activityCloseEnterAnimation">@android:anim/fade_in</item>
+	</style>
+	
+	
+	<style
+		name="DownUpActivity_back"
+		parent="@android:style/Animation.Activity">
+		<item name="android:activityOpenEnterAnimation">@android:anim/fade_in</item>
+		<item name="android:activityOpenExitAnimation">@anim/@android:anim/fade_out</item>
+		<item name="android:activityCloseExitAnimation">@android:anim/fade_out</item>
+		<item name="android:activityCloseEnterAnimation">@android:anim/fade_in</item>
+	</style>
+	
+	<style
+		name="slideAnimation"
+		parent="@android:style/Animation.Activity">
+		<item name="android:activityOpenEnterAnimation">@anim/right_transition</item>
+		<item name="android:activityOpenExitAnimation">@anim/left_transition</item>
+		<item name="android:activityCloseExitAnimation">@anim/right_transition</item>
+		<item name="android:activityCloseEnterAnimation">@anim/left_transition</item>
+	</style>
+
+	<style
+		name="CustomDialogAnim"
+		parent="@android:style/Animation.Dialog">
+		<item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+		<item name="android:windowExitAnimation">@anim/dialog_exit</item>
+	</style>
+</resources>
+
+                                                                                                   

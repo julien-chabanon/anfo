@@ -1,0 +1,270 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="330dp"
+                android:layout_height="300dp"
+                android:background="@layout/shape_classic">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCore1"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewCore1Widget"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="loading..." />
+
+        <TextView
+            android:id="@+id/textViewCore1TempWidget"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="loading..." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/progressBarWidgetCore1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/textViewCore1Load"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:textColor="#FFF"
+            	android:textStyle="bold"
+                android:gravity="center"
+                android:text="%" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textViewMaxFreqAllowCPU1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:text="loading..." />
+        <TextView
+            android:id="@+id/textViewMinFreqAllowCPU1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="loading..." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCore2"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/linearLayoutCore1"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewCore2Widget"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="loading..." />
+
+        <TextView
+            android:id="@+id/textViewCore2TempWidget"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="loading..." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/progressBarWidgetCore2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewCore2Load"
+                android:layout_width="48dp"
+                android:textColor="#FFF"
+            	android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="%" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textViewMaxFreqAllowCPU2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="loading..." />
+        <TextView
+            android:id="@+id/textViewMinFreqAllowCPU2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="loading..." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCore3"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_alignLeft="@+id/linearLayoutCore1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewCore3Widget"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="loading..." />
+
+        <TextView
+            android:id="@+id/textViewCore3TempWidget"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="loading..." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/progressBarWidgetCore3"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="100dp"
+                android:layout_gravity="center" 
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewCore3Load"
+                android:layout_width="48dp"
+                android:textColor="#FFF"
+            	android:textStyle="bold"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="%" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textViewMaxFreqAllowCPU3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:text="loading..." />
+        <TextView
+            android:id="@+id/textViewMinFreqAllowCPU3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="loading..." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCore4"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_alignLeft="@+id/linearLayoutCore2"
+        android:layout_alignTop="@+id/linearLayoutCore3"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewCore4Widget"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="loading..." />
+
+        <TextView
+            android:id="@+id/textViewCore4TempWidget"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="loading..." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/progressBarWidgetCore4"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="100dp"
+                android:layout_gravity="center" 
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewCore4Load"
+                android:layout_width="48dp"
+                android:textColor="#FFF"
+            	android:textStyle="bold"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="%" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textViewMaxFreqAllowCPU4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:text="loading..." />
+        <TextView
+            android:id="@+id/textViewMinFreqAllowCPU4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="loading..." />
+    </LinearLayout>
+
+</RelativeLayout>

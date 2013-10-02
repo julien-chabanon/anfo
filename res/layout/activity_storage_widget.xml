@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center" 
+        android:background="@layout/shape_classic">
+
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="vertical"
+            android:padding="10dip"
+            android:gravity="center_horizontal">
+     
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageViewInternalMin"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:paddingRight="5dip"
+                android:paddingLeft="5dip"
+                android:src="@drawable/sdcardinternalavalaible" 
+                android:background="@drawable/click"/>
+
+            <ImageView
+                android:id="@+id/imageViewInternalMax"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:paddingRight="5dip"
+                android:src="@drawable/sdcardinternaltotal" 
+                android:background="@drawable/click"/>
+
+            <ImageView
+                android:id="@+id/imageViewExternalMin"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:paddingRight="5dip"
+                android:src="@drawable/sdcardexternalavalaible" 
+                android:background="@drawable/click"/>
+
+            <ImageView
+                android:id="@+id/imageViewExternalMax"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:paddingRight="5dip"
+                android:src="@drawable/sdcardexternaltotal"
+                android:background="@drawable/click"/>
+
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp" 
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewInternalMin"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:paddingRight="5dip"
+                android:paddingLeft="5dip"
+                android:gravity="center_horizontal"
+                android:textColor="#FFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="loading..." />
+
+            <TextView
+                android:id="@+id/textViewInternalMax"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:paddingRight="5dip"
+                android:textColor="#FFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="loading..." />
+
+            <TextView
+                android:id="@+id/textViewExternalMin"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:paddingRight="5dip"
+                android:textColor="#FFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="loading..." />
+
+            <TextView
+                android:id="@+id/textViewExternalMax"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:paddingRight="5dip"
+                android:textColor="#FFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="loading..." />
+        
+            </LinearLayout>
+           </LinearLayout> 
+        </LinearLayout>

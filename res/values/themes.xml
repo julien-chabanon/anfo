@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	
+	<style
+		name="DownUpActivity_back"
+		parent="@android:style/Theme.Light.NoTitleBar">
+		<item name="android:windowAnimationStyle">@style/DownUpActivity_back</item>
+	</style>
+	
+	<style name="CustomDialogAnimationTheme" parent="@android:style/Theme.Dialog">
+		<item name="android:windowAnimationStyle">@style/CustomDialogAnim</item>
+	</style>
+</resources>
+ 
+    
