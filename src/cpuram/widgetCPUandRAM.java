@@ -2,6 +2,7 @@ package cpuram;
 
 
 import MaximumWidget.com.R;
+import utils.getCPU;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
@@ -114,7 +115,7 @@ public class widgetCPUandRAM extends AppWidgetProvider {
 
 	   		    
 	   		    //Set the text with the current time.
-	   		  	SystemUtils cpu = new SystemUtils();
+	   		    getCPU cpu = new getCPU();
 	   			try {
 	   		   	
 	   			 cpu_max = cpu.getCPUFrequencyMax()/1000;

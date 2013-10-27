@@ -1,6 +1,7 @@
 package application;
 
 import MaximumWidget.com.R;
+import utils.getCPU;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
@@ -16,7 +17,7 @@ public class CpuInfo extends Fragment {
 	private ProgressBar mProgress;
     private int mProgressStatus = 0;
     private Handler mHandler = new Handler();
-    SystemUtils cpu = new SystemUtils();
+    getCPU cpu = new getCPU();
     
     TextView use;
     TextView max;
@@ -26,6 +27,7 @@ public class CpuInfo extends Fragment {
     TextView processesNumbers;
     TextView bogoText;
     TextView gouvernorText;
+    TextView cpuTempText;
     int cpu0_current;
     Context context;
     String bite;
@@ -82,6 +84,7 @@ public class CpuInfo extends Fragment {
         processesNumbers = (TextView)myFragmentView.findViewById(R.id.textViewProcessesNumbers);
         bogoText = (TextView)myFragmentView.findViewById(R.id.textViewBogo);
         gouvernorText = (TextView)myFragmentView.findViewById(R.id.textViewGovernor);
+        cpuTempText = (TextView)myFragmentView.findViewById(R.id.textViewCPUTemp);
         
         
         try {
@@ -124,6 +127,46 @@ public class CpuInfo extends Fragment {
 					   	 {
 					   		cpu0_current = cpu_max;
 					   	 }
+						
+						
+//----------------------------------TEMPERATURE---------------------------------------------------------------------------------
+						 int cpu_temp_AOSP = cpu.getCPUTemp();
+					   	 int cpu_temp_HTC = (int) cpu.getCPUTempHTC();
+					   	 int cpu_temp_tegra = cpu.getCPUTempTegra();
+					   	 int cpu_temp_GalaxyS3 = cpu.getCPUTempGalaxyS3();
+
+
+					   	  
+					   	 if(cpu_temp_tegra > 0)
+					   	 {
+					   		//cpu_temp_1 = cpu_temp_tegra;
+					   		cpuTempText.setText("    "  + cpu_temp_tegra + "°C");
+					   	 }
+
+	                    else if(cpu_temp_AOSP > 0)
+	                    {
+	                        //cpu_temp_3 = cpu_temp_AOSP;
+	                    	cpuTempText.setText("    "  + cpu_temp_AOSP + "°C");
+	                    }
+					   	 
+					   	 else if(cpu_temp_GalaxyS3 > 0)
+					   	 {
+					   		//cpu_temp_1 = cpu_temp_GalaxyS3/1000;
+					   		cpuTempText.setText("    "  + cpu_temp_GalaxyS3 + "°C");
+					   	 }
+
+					   	
+					   	else if(cpu_temp_HTC > 0)
+					   	{
+					   		//cpu_temp_4 = cpu_temp_HTC;
+					   		cpuTempText.setText("    " +  cpu_temp_HTC + "°C");
+					   	}
+					   	else
+					   	{
+					   		cpuTempText.setText("No Temp");
+					   	}
+				
+//----------------------------------TEMPERATURE END---------------------------------------------------------------------------------
 					   	 
 						
 					} catch (Exception e) {

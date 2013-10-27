@@ -1,8 +1,8 @@
 package application;
 
 import java.util.ArrayList;
+import utils.getCPU;
 import java.util.HashMap;
-
 import MaximumWidget.com.R;
 import android.R.integer;
 import android.os.Bundle;
@@ -34,7 +34,7 @@ public class Overclock extends Fragment {
 	Spinner spinneurGovernor;
 	SpinnerAdapter adapterFreq;
 	SpinnerAdapter adapterGoverneur;
-	SystemUtils cpu = new SystemUtils();
+	getCPU cpu = new getCPU();
 	TextView minText;
 	TextView maxText;
 	TextView governorText;

@@ -1,6 +1,7 @@
 package cpuram;
 
 import MaximumWidget.com.R;
+import utils.getCPU;
 import android.appwidget.AppWidgetManager;
 import android.content.ComponentName;
 import android.content.Context;
@@ -31,7 +32,7 @@ public class AsyncTaskCpuRam extends AsyncTask<Void, Integer, Void>
    	int cpu_temp_2;
    	int cpu_temp_3;
    	float cpu_temp_4;
-   	SystemUtils cpu = new SystemUtils();
+   	getCPU cpu = new getCPU();
    	widgetCPUandRAM bg = new widgetCPUandRAM();
    	Context context;
 	

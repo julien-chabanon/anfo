@@ -5,7 +5,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import application.getDisk;
+import utils.getDisk;
 
 public class SdCard extends Activity {
 

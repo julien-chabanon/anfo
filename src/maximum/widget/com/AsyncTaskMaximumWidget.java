@@ -1,6 +1,7 @@
 package maximum.widget.com;
 
 import MaximumWidget.com.R;
+import utils.getDisk;
 import android.appwidget.AppWidgetManager;
 import android.content.ComponentName;
 import android.content.Context;
@@ -11,7 +12,7 @@ import android.net.wifi.WifiManager;
 import android.os.AsyncTask;
 import android.telephony.TelephonyManager;
 import android.widget.RemoteViews;
-import application.getDisk;
+import utils.getCPU;
 
 public class AsyncTaskMaximumWidget extends AsyncTask<Void, Integer, Void>
 {
@@ -41,7 +42,7 @@ public class AsyncTaskMaximumWidget extends AsyncTask<Void, Integer, Void>
    	//int cpu_temp_3;
    	int cpu_temp_4;
    	float bogo;
-   	SystemUtils cpu = new SystemUtils();
+   	getCPU cpu = new getCPU();
    	widgetBG bg = new widgetBG();
    	getDisk disk = new getDisk();
    	TelephonyManager telephonyManager;

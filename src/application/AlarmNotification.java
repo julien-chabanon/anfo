@@ -5,13 +5,14 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.PowerManager;
+import utils.getCPU;
 
 
 public class AlarmNotification extends BroadcastReceiver {
 	
 
    	PowerManager pm;
-   	SystemUtils cpu = new SystemUtils();
+   	getCPU cpu = new getCPU();
    	String cpuLoad = new String("CPULoad");
    	String cpuCore = new String("CPUCore");
    	String ram = new String("EnableRam");
@@ -19,7 +20,7 @@ public class AlarmNotification extends BroadcastReceiver {
 	Boolean prefCpuLoad;
     Boolean prefCpuCore;
     Boolean prefRam;
-    Long when = SystemUtils.when;
+    Long when = getCPU.when;
 
     
  @Override

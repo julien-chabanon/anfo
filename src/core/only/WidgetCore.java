@@ -2,6 +2,7 @@ package core.only;
 
 
 import MaximumWidget.com.R;
+import utils.getCPU;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
@@ -59,7 +60,7 @@ public class WidgetCore extends AppWidgetProvider {
    	int cpu1_current;
    	int cpu2_current;
    	int cpu3_current;
-   	SystemUtils cpu = new SystemUtils();
+   	getCPU cpu = new getCPU();
    	int mProgressStatusCPU0;
    	int mProgressStatusCPU1;
    	int mProgressStatusCPU2;

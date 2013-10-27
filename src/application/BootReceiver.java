@@ -1,6 +1,7 @@
 package application;
 
 import android.app.Activity;
+import utils.getCPU;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -20,7 +21,7 @@ public class BootReceiver extends BroadcastReceiver {
 	String bootRam = new String("EnableBootRam");
 	String ram = new String("EnableRam");
 	String MY_PREF = new String("MY_PREFS");
-	SystemUtils cpu = new SystemUtils();
+	getCPU cpu = new getCPU();
     String cpuCoreBiatch = new String("CPUCoreBiatch");
     String bootBiatch = new String("CoreBootBiatch");
     String cpuMinFreq = new String("cpuMinFreq");

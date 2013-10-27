@@ -2,6 +2,7 @@ package all.in.one;
 
 
 import MaximumWidget.com.R;
+import utils.*;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
@@ -103,7 +104,7 @@ public class AllWidget extends AppWidgetProvider {
 
 	   		    
 	   		//Set the text with the current time.
-	   		  SystemUtils cpu = new SystemUtils();
+	   		  getCPU cpu = new getCPU();
 	   			try {
 
 	   		   	 percent2 = cpu.readUsage();

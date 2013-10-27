@@ -1,6 +1,7 @@
 package all.in.one;
 
 import MaximumWidget.com.R;
+import utils.*;
 import android.appwidget.AppWidgetManager;
 import android.content.ComponentName;
 import android.content.Context;
@@ -22,7 +23,7 @@ public class AsyncTaskAllWidget extends AsyncTask<Void, Integer, Void>
    	
    	PowerManager pm;
    	getDisk dd = new getDisk();
-   	SystemUtils cpu = new SystemUtils();
+   	getCPU cpu = new getCPU();
    	AllWidget bg = new AllWidget();
    	Context context;
 	

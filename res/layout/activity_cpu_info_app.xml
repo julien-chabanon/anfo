@@ -159,6 +159,30 @@
             android:layout_height="wrap_content" >
 
             <ImageView
+                android:id="@+id/imageViewCPUTemp"
+                android:layout_width="70dip"
+                android:layout_height="70dip"
+                android:src="@drawable/cputemp" />
+
+
+            <TextView
+                android:id="@+id/textViewCPUTemp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="loading..."
+                android:textColor="#686A69"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    
+    
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
                 android:id="@+id/imageViewPercentProcesses"
                 android:layout_width="70dip"
                 android:layout_height="70dip"
@@ -247,9 +271,15 @@
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-        
-        
         </LinearLayout>
+        
+     
+     
+        
+     
+     
+        
+     
         </LinearLayout>
     	</RelativeLayout>
         </LinearLayout>

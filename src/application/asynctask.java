@@ -1,6 +1,8 @@
 package application;
 
 import MaximumWidget.com.R;
+import utils.getCPU;
+import android.annotation.SuppressLint;
 import android.app.*;
 import android.content.Context;
 import android.content.Intent;
@@ -20,7 +22,7 @@ public class asynctask extends AsyncTask<Void, Integer, Void>
 
 	    public asynctask(Context context) {
 	        this.context = context;
-	        when= SystemUtils.when;
+	        when= getCPU.when;
 	    }
 
 
@@ -41,7 +43,7 @@ public class asynctask extends AsyncTask<Void, Integer, Void>
 	protected Void doInBackground(Void... arg0) {
 
 		PowerManager pm;
-	   	SystemUtils cpu = new SystemUtils();
+		getCPU cpu = new getCPU();
 	   	String cpuLoad = new String("CPULoad");
 	   	String cpuCore = new String("CPUCore");
 		String cpuFreq = new String("CPUFreq");
@@ -968,7 +970,8 @@ public class asynctask extends AsyncTask<Void, Integer, Void>
 	 
 	 
 	 
-	 public void notificationStatusCpuLoad(Context context,int logo,int load) 
+	 @SuppressLint("NewApi")
+	public void notificationStatusCpuLoad(Context context,int logo,int load) 
 	 {
 		    int api = Integer.valueOf(android.os.Build.VERSION.SDK);
 		    
@@ -1022,7 +1025,8 @@ public class asynctask extends AsyncTask<Void, Integer, Void>
 		}
 	 
 	 
-	 public void notificationStatusCpuCore(Context context,int logoCpuCore,int cpu_max_core,int cpu_active_core) 
+	 @SuppressLint("NewApi")
+	public void notificationStatusCpuCore(Context context,int logoCpuCore,int cpu_max_core,int cpu_active_core) 
 	 {
 		 
 		 int api = Integer.valueOf(android.os.Build.VERSION.SDK);
@@ -1074,7 +1078,8 @@ public class asynctask extends AsyncTask<Void, Integer, Void>
 		} 
 
 	 
-	 public void notificationRam(Context context,int logo,int load) 
+	 @SuppressLint("NewApi")
+	public void notificationRam(Context context,int logo,int load) 
 	 {
 		 
 		 int api = Integer.valueOf(android.os.Build.VERSION.SDK);
@@ -1127,7 +1132,8 @@ public class asynctask extends AsyncTask<Void, Integer, Void>
 	 
 	 
 	 
-	 public void notificationCpuFreq(Context context,int logo,int load) 
+	 @SuppressLint("NewApi")
+	public void notificationCpuFreq(Context context,int logo,int load) 
 	 {
 		 
 		 int api = Integer.valueOf(android.os.Build.VERSION.SDK);
@@ -1178,7 +1184,8 @@ public class asynctask extends AsyncTask<Void, Integer, Void>
 		}
 	 
 	 
-	 public void notificationCoreUse1(Context context,int logo,int core1_load, int core2_load) 
+	 @SuppressLint("NewApi")
+	public void notificationCoreUse1(Context context,int logo,int core1_load, int core2_load) 
 	 {
 		 
 		 int api = Integer.valueOf(android.os.Build.VERSION.SDK);
@@ -1230,7 +1237,8 @@ public class asynctask extends AsyncTask<Void, Integer, Void>
 	 
 	 
 	 
-	 public void notificationCoreUse2(Context context,int logo,int core3_load, int core4_load) 
+	 @SuppressLint("NewApi")
+	public void notificationCoreUse2(Context context,int logo,int core3_load, int core4_load) 
 	 {
 		 
 		 int api = Integer.valueOf(android.os.Build.VERSION.SDK);
@@ -1281,7 +1289,8 @@ public class asynctask extends AsyncTask<Void, Integer, Void>
 		}
 	 
 	 
-	 public void notificationCoreUseSingleCore(Context context,int logo,int core_load) 
+	 @SuppressLint("NewApi")
+	public void notificationCoreUseSingleCore(Context context,int logo,int core_load) 
 	 {
 		 
 		 int api = Integer.valueOf(android.os.Build.VERSION.SDK);

@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="MaximumWidget.com"
     android:installLocation="auto"
-    android:versionCode="73"
-    android:versionName="2.4.4" >
+    android:versionCode="76"
+    android:versionName="2.5.1" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -421,36 +421,6 @@
             android:theme="@style/Theme.PageIndicatorDefaults" >
         </activity>
 
-        <!--
-      TAB INDICATOR 
-        <activity
-            android:name=".SampleTabsDefault"
-            android:label="Tabs/Default"
-            android:theme="@style/Theme.PageIndicatorDefaults">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".SampleTabsStyled"
-            android:label="Tabs/Styled"
-            android:theme="@style/StyledIndicators">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
-            </intent-filter>
-        </activity>
-      <activity
-          android:name=".SampleTabsWithIcons"
-          android:label="Tabs/With Icons"
-          android:theme="@style/StyledIndicators">
-        <intent-filter>
-          <action android:name="android.intent.action.MAIN" />
-          <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
-        </intent-filter>
-      </activity>
-        -->
         <activity
             android:name="application.AboutMe"
             android:label="@string/title_activity_about_me" >

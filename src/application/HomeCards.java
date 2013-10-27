@@ -1,6 +1,8 @@
 package application;
 
 import MaximumWidget.com.R;
+import utils.getDisk;
+import utils.getCPU;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.content.BroadcastReceiver;
@@ -58,7 +60,7 @@ public class HomeCards extends Fragment {
 	 private int batteryVolt = 0;
 	 float battery = 0;
 	 View myFragmentView = null;
-     SystemUtils cpu;
+	 getCPU cpu;
      Timer t;
     TextView cpuLoadText;
     TextView cpuCoreText;
@@ -263,7 +265,7 @@ public class HomeCards extends Fragment {
         activity = getActivity();
         
         handler = new Handler();
-        cpu = new SystemUtils();
+        cpu = new getCPU();
         dd = new getDisk();
         cpuStat = new CpuStat();
         

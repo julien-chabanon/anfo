@@ -33,7 +33,7 @@ public class SmashScreen extends Activity {
 		}
         String version = pInfo.versionName;
         
-        versionText.setText("Version " + version);
+        versionText.setText("Version " + version + " - open source");
  
         // run a thread after 2 seconds to start the home screen
         handler.postDelayed(new Runnable() {

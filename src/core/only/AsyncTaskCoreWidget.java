@@ -6,6 +6,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.RemoteViews;
+import utils.getCPU;
 
 public class AsyncTaskCoreWidget extends AsyncTask<Void, Integer, Void>
 {
@@ -49,7 +50,7 @@ public class AsyncTaskCoreWidget extends AsyncTask<Void, Integer, Void>
    	int cpu1_current;
    	int cpu2_current;
    	int cpu3_current;
-   	SystemUtils cpu = new SystemUtils();
+   	getCPU cpu = new getCPU();
    	int mProgressStatusCPU0;
    	int mProgressStatusCPU1;
    	int mProgressStatusCPU2;

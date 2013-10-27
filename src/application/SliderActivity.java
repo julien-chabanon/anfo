@@ -13,7 +13,6 @@ import android.support.v4.view.ViewPager;
 import android.util.TypedValue;
 import android.widget.TextView;
 import com.viewpagerindicator.TabPageIndicator;
-
 import java.util.List;
 import java.util.Vector;
 
@@ -25,7 +24,7 @@ public class SliderActivity extends FragmentActivity {
 	int api = 0;
 
 @Override
-protected void onCreate(Bundle savedInstanceState) {
+protected void onCreate(Bundle savedInstanceState) { 
     super.onCreate(savedInstanceState);
     
     

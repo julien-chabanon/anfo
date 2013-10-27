@@ -12,13 +12,13 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.*;
 import application.Root;
-
+import utils.getCPU;
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class ControlCore extends Activity {
 	
-	SystemUtils cpu = new SystemUtils();
+	getCPU cpu = new getCPU();
 	Timer t;
 	private ProgressBar mProgressCPU0;
 	private ProgressBar mProgressCPU1;

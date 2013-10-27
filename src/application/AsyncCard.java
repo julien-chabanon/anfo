@@ -1,6 +1,7 @@
 package application;
 
 import android.content.Context;
+import utils.getCPU;
 import android.os.AsyncTask;
 
 public class AsyncCard extends AsyncTask<Void, Integer, Void>
@@ -11,7 +12,7 @@ public class AsyncCard extends AsyncTask<Void, Integer, Void>
 
 	    public AsyncCard(Context context) {
 	        this.context = context;
-	        when= SystemUtils.when;
+	        when= getCPU.when;
 	    }
 
 

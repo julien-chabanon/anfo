@@ -1,6 +1,7 @@
 package application;
 
 import MaximumWidget.com.R;
+import utils.getCPU;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -20,7 +21,7 @@ import java.util.TimerTask;
 
 public class ControlCore extends Fragment {
 	
-	SystemUtils cpu = new SystemUtils(); 
+	getCPU cpu = new getCPU(); 
 	Timer t;
 	private ProgressBar mProgressCPU0;
 	private ProgressBar mProgressCPU1;

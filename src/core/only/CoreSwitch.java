@@ -1,6 +1,7 @@
 package core.only;
 
 import MaximumWidget.com.R;
+import utils.getCPU;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -25,7 +26,7 @@ public class CoreSwitch extends Activity {
 	CheckBox checkSetOnBoot;
 	
 	Handler handler;
-	SystemUtils cpu = new SystemUtils();
+	getCPU cpu = new getCPU();
 	Root root = new Root();
 	
 	int coreClick = 4;

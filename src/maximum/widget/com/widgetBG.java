@@ -22,8 +22,8 @@ import android.telephony.TelephonyManager;
 import android.widget.RemoteViews;
 import android.widget.Toast;
 import application.CPUstatSmall;
-import application.getDisk;
-
+import utils.getDisk;
+import utils.getCPU;
 import java.util.Timer;
 
 
@@ -69,7 +69,7 @@ public class widgetBG extends AppWidgetProvider {
     String MY_PREFS = "MY_PREFS";
     TelephonyManager telephonyManager;
     
-    SystemUtils cpu = new SystemUtils();
+    getCPU cpu = new getCPU();
     getDisk disk = new getDisk();
     RemoteViews views;
     int compteur = 0;
@@ -238,8 +238,6 @@ public class widgetBG extends AppWidgetProvider {
 			   	 cpu_temp_GalaxyS3 = cpu.getCPUTempGalaxyS3();
 
 
-
-			   	 
 			   	 if(cpu_temp_tegra > 0)
 			   	 {
 			   		//cpu_temp_1 = cpu_temp_tegra/1000;

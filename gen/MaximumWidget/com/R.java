@@ -641,29 +641,29 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int yes=0x7f020112;
     }
     public static final class id {
-        public static final int Battery=0x7f0700e4;
+        public static final int Battery=0x7f0700e6;
         public static final int BatteryAct1=0x7f070016;
-        public static final int BatteryAct2=0x7f070077;
+        public static final int BatteryAct2=0x7f070079;
         public static final int BatteryUse=0x7f070011;
-        public static final int BluetoothText=0x7f07008f;
-        public static final int CPUCore=0x7f0700d8;
-        public static final int CPUTemp=0x7f0700d9;
+        public static final int BluetoothText=0x7f070091;
+        public static final int CPUCore=0x7f0700da;
+        public static final int CPUTemp=0x7f0700db;
         public static final int CPUUse=0x7f07000f;
-        public static final int CPUcurrent=0x7f0700d7;
-        public static final int CardCPUAverage=0x7f07007d;
-        public static final int CardCPUNow=0x7f07007c;
-        public static final int CardCPUpourcent=0x7f07007b;
-        public static final int CardCoreActiv=0x7f07007e;
-        public static final int CardRamFree=0x7f070084;
-        public static final int CardRamPourcent=0x7f070081;
-        public static final int CardRamTotal=0x7f070082;
-        public static final int CardRamUse=0x7f070083;
-        public static final int CardSDCardFree=0x7f070099;
-        public static final int CardSDCardPourcent=0x7f070096;
-        public static final int CardSDCardTotal=0x7f070097;
-        public static final int CardSDCardUse=0x7f070098;
-        public static final int GPSICon=0x7f07011e;
-        public static final int GPSSignal=0x7f07011f;
+        public static final int CPUcurrent=0x7f0700d9;
+        public static final int CardCPUAverage=0x7f07007f;
+        public static final int CardCPUNow=0x7f07007e;
+        public static final int CardCPUpourcent=0x7f07007d;
+        public static final int CardCoreActiv=0x7f070080;
+        public static final int CardRamFree=0x7f070086;
+        public static final int CardRamPourcent=0x7f070083;
+        public static final int CardRamTotal=0x7f070084;
+        public static final int CardRamUse=0x7f070085;
+        public static final int CardSDCardFree=0x7f07009b;
+        public static final int CardSDCardPourcent=0x7f070098;
+        public static final int CardSDCardTotal=0x7f070099;
+        public static final int CardSDCardUse=0x7f07009a;
+        public static final int GPSICon=0x7f07011f;
+        public static final int GPSSignal=0x7f070120;
         public static final int LayoutCPU0=0x7f07001f;
         public static final int LayoutCPU0Details=0x7f070021;
         public static final int LayoutCPU1=0x7f070025;
@@ -680,125 +680,125 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int LayoutCPU6Details=0x7f070045;
         public static final int LayoutCPU7=0x7f070049;
         public static final int LayoutCPU7Details=0x7f07004b;
-        public static final int LayoutRam=0x7f0700da;
+        public static final int LayoutRam=0x7f0700dc;
         public static final int RAMUse=0x7f070010;
-        public static final int RamMax=0x7f0700e2;
-        public static final int RamUse=0x7f0700df;
-        public static final int Ramcurrent=0x7f0700e0;
+        public static final int RamMax=0x7f0700e4;
+        public static final int RamUse=0x7f0700e1;
+        public static final int Ramcurrent=0x7f0700e2;
         public static final int SDCardInternalUse=0x7f070012;
-        public static final int TextViewRamUsingMo=0x7f0700e1;
-        public static final int WifiSignal=0x7f07010d;
-        public static final int auto=0x7f070121;
-        public static final int backlightcontrol=0x7f070122;
-        public static final int backlightsetting=0x7f070120;
-        public static final int batteryView=0x7f0700e3;
-        public static final int batteryViewAct=0x7f07007a;
+        public static final int TextViewRamUsingMo=0x7f0700e3;
+        public static final int WifiSignal=0x7f07010e;
+        public static final int auto=0x7f070122;
+        public static final int backlightcontrol=0x7f070123;
+        public static final int backlightsetting=0x7f070121;
+        public static final int batteryView=0x7f0700e5;
+        public static final int batteryViewAct=0x7f07007c;
         public static final int batteryViewImg=0x7f070015;
-        public static final int bluetooth=0x7f0700e6;
-        public static final int bluetooth2=0x7f070108;
-        public static final int bluetoothICon=0x7f070113;
-        public static final int bluetoothIconCard=0x7f07008e;
-        public static final int bluetoothSignal=0x7f070114;
-        public static final int bluetoothTest1=0x7f070115;
-        public static final int bluetoothTest2=0x7f070116;
-        public static final int bluetoothTest3=0x7f070117;
+        public static final int bluetooth=0x7f0700e8;
+        public static final int bluetooth2=0x7f070109;
+        public static final int bluetoothICon=0x7f070114;
+        public static final int bluetoothIconCard=0x7f070090;
+        public static final int bluetoothSignal=0x7f070115;
+        public static final int bluetoothTest1=0x7f070116;
+        public static final int bluetoothTest2=0x7f070117;
+        public static final int bluetoothTest3=0x7f070118;
         public static final int bottom=0x7f070003;
-        public static final int brightness=0x7f0700e9;
-        public static final int brightness2=0x7f07010b;
-        public static final int brightnessIcon=0x7f070092;
-        public static final int brightnessText=0x7f070093;
-        public static final int buttonApplyOverclock=0x7f0700c2;
+        public static final int brightness=0x7f0700eb;
+        public static final int brightness2=0x7f07010c;
+        public static final int brightnessIcon=0x7f070094;
+        public static final int brightnessText=0x7f070095;
+        public static final int buttonApplyOverclock=0x7f0700c4;
         public static final int buttonDualCore=0x7f070050;
         public static final int buttonGoMarket=0x7f07001d;
         public static final int buttonQuadCore=0x7f070052;
         public static final int buttonSingleCore=0x7f07004f;
         public static final int buttonTripleCore=0x7f070051;
-        public static final int checkBox1=0x7f0700ad;
-        public static final int checkBox2=0x7f0700af;
-        public static final int checkBox3=0x7f0700b2;
-        public static final int checkBox5=0x7f0700b8;
-        public static final int checkBoxCpuFreq=0x7f0700b5;
-        public static final int checkBoxFrequencyOnBoot=0x7f0700c1;
+        public static final int checkBox1=0x7f0700af;
+        public static final int checkBox2=0x7f0700b1;
+        public static final int checkBox3=0x7f0700b4;
+        public static final int checkBox5=0x7f0700ba;
+        public static final int checkBoxCpuFreq=0x7f0700b7;
+        public static final int checkBoxFrequencyOnBoot=0x7f0700c3;
         public static final int checkBoxSetOnBootCore=0x7f070053;
         public static final int checkBoxSetOnBootCoreSwitch=0x7f070059;
-        public static final int data=0x7f0700e7;
-        public static final int data2=0x7f070109;
-        public static final int data3gIConTitle=0x7f07008a;
-        public static final int data3gTitleText=0x7f07008b;
-        public static final int dataIcon=0x7f07008c;
-        public static final int dataText=0x7f07008d;
-        public static final int dataTitleText=0x7f070089;
-        public static final int fragment_container=0x7f070127;
-        public static final int gps=0x7f0700e8;
-        public static final int gps2=0x7f07010a;
-        public static final int gpsIcon=0x7f070090;
-        public static final int gpsText=0x7f070091;
+        public static final int data=0x7f0700e9;
+        public static final int data2=0x7f07010a;
+        public static final int data3gIConTitle=0x7f07008c;
+        public static final int data3gTitleText=0x7f07008d;
+        public static final int dataIcon=0x7f07008e;
+        public static final int dataText=0x7f07008f;
+        public static final int dataTitleText=0x7f07008b;
+        public static final int fragment_container=0x7f070128;
+        public static final int gps=0x7f0700ea;
+        public static final int gps2=0x7f07010b;
+        public static final int gpsIcon=0x7f070092;
+        public static final int gpsText=0x7f070093;
         public static final int imageView1=0x7f070060;
-        public static final int imageView10=0x7f0700a7;
-        public static final int imageView2=0x7f07009d;
-        public static final int imageView3=0x7f0700a0;
-        public static final int imageView4=0x7f0700a1;
-        public static final int imageView5=0x7f07009e;
-        public static final int imageView6=0x7f07009f;
-        public static final int imageView7=0x7f0700a4;
-        public static final int imageView8=0x7f0700a9;
+        public static final int imageView10=0x7f0700a9;
+        public static final int imageView2=0x7f07009f;
+        public static final int imageView3=0x7f0700a2;
+        public static final int imageView4=0x7f0700a3;
+        public static final int imageView5=0x7f0700a0;
+        public static final int imageView6=0x7f0700a1;
+        public static final int imageView7=0x7f0700a6;
+        public static final int imageView8=0x7f0700ab;
         public static final int imageViewAnfoCore=0x7f070008;
         public static final int imageViewBattery=0x7f07000d;
-        public static final int imageViewBatteryPercentOnly=0x7f0700d3;
+        public static final int imageViewBatteryPercentOnly=0x7f0700d5;
         public static final int imageViewBluetoothAllowYesOrNo=0x7f07001c;
         public static final int imageViewBogo=0x7f070068;
-        public static final int imageViewCPUTemp=0x7f070106;
-        public static final int imageViewCore=0x7f0700d6;
+        public static final int imageViewCPUTemp=0x7f07006a;
+        public static final int imageViewCore=0x7f0700d8;
         public static final int imageViewCpuUse=0x7f07000b;
         public static final int imageViewCurrent=0x7f07005e;
         public static final int imageViewDataAllowYesOrNo=0x7f07001a;
-        public static final int imageViewExternalMax=0x7f0700ce;
-        public static final int imageViewExternalMin=0x7f0700cd;
-        public static final int imageViewIcon=0x7f070124;
-        public static final int imageViewInternalMax=0x7f07006d;
-        public static final int imageViewInternalMin=0x7f0700cc;
+        public static final int imageViewExternalMax=0x7f0700d0;
+        public static final int imageViewExternalMin=0x7f0700cf;
+        public static final int imageViewIcon=0x7f070125;
+        public static final int imageViewInternalMax=0x7f07006f;
+        public static final int imageViewInternalMin=0x7f0700ce;
         public static final int imageViewMax=0x7f07005a;
         public static final int imageViewMin=0x7f07005c;
-        public static final int imageViewNotificationCoreUse=0x7f0700b6;
-        public static final int imageViewNotificationCpuPercent=0x7f0700ab;
-        public static final int imageViewNotificationFreq=0x7f0700b3;
-        public static final int imageViewNotificationRam=0x7f0700b0;
+        public static final int imageViewNotificationCoreUse=0x7f0700b8;
+        public static final int imageViewNotificationCpuPercent=0x7f0700ad;
+        public static final int imageViewNotificationFreq=0x7f0700b5;
+        public static final int imageViewNotificationRam=0x7f0700b2;
         public static final int imageViewPercentProcesses=0x7f070063;
         public static final int imageViewProcessesNumbers=0x7f070066;
-        public static final int imageViewRamAvailableMo=0x7f0700dc;
-        public static final int imageViewRamMo=0x7f0700c3;
-        public static final int imageViewRamPercent=0x7f0700db;
-        public static final int imageViewRamTotal=0x7f0700de;
+        public static final int imageViewRamAvailableMo=0x7f0700de;
+        public static final int imageViewRamMo=0x7f0700c5;
+        public static final int imageViewRamPercent=0x7f0700dd;
+        public static final int imageViewRamTotal=0x7f0700e0;
         public static final int imageViewRamUse=0x7f07000c;
-        public static final int imageViewRamUsing=0x7f0700c5;
-        public static final int imageViewRamUsingMo=0x7f0700dd;
+        public static final int imageViewRamUsing=0x7f0700c7;
+        public static final int imageViewRamUsingMo=0x7f0700df;
         public static final int imageViewSDCardInternalUse=0x7f07000e;
-        public static final int imageViewSysyemPanel=0x7f07009c;
+        public static final int imageViewSysyemPanel=0x7f07009e;
         public static final int imageViewWifiAllowYesOrNo=0x7f070018;
         public static final int imageViewfacebook=0x7f070005;
         public static final int imageViewforum=0x7f070007;
         public static final int imageViewpremium=0x7f070009;
-        public static final int imageViewramsize=0x7f0700c7;
+        public static final int imageViewramsize=0x7f0700c9;
         public static final int imageViewrate=0x7f07000a;
         public static final int imageViewtwitter=0x7f070006;
-        public static final int indicator=0x7f070128;
-        public static final int linearLayout1=0x7f070076;
+        public static final int indicator=0x7f070129;
+        public static final int linearLayout1=0x7f070078;
         public static final int linearLayout2=0x7f070014;
-        public static final int linearLayout3=0x7f07011d;
-        public static final int linearLayout4=0x7f070118;
-        public static final int linearLayout7=0x7f070087;
-        public static final int linearLayoutCore1=0x7f0700ea;
-        public static final int linearLayoutCore2=0x7f0700f1;
-        public static final int linearLayoutCore3=0x7f0700f8;
-        public static final int linearLayoutCore4=0x7f0700ff;
-        public static final int listView1=0x7f0700d2;
-        public static final int listView2=0x7f07006c;
-        public static final int menu_settings=0x7f07012a;
+        public static final int linearLayout3=0x7f07011e;
+        public static final int linearLayout4=0x7f070119;
+        public static final int linearLayout7=0x7f070089;
+        public static final int linearLayoutCore1=0x7f0700ec;
+        public static final int linearLayoutCore2=0x7f0700f3;
+        public static final int linearLayoutCore3=0x7f0700fa;
+        public static final int linearLayoutCore4=0x7f070101;
+        public static final int listView1=0x7f0700d4;
+        public static final int listView2=0x7f07006e;
+        public static final int menu_settings=0x7f07012b;
         public static final int none=0x7f070000;
-        public static final int pager=0x7f070129;
+        public static final int pager=0x7f07012a;
         public static final int progressBar1=0x7f070061;
-        public static final int progressBarBattery=0x7f070078;
-        public static final int progressBarBrightness=0x7f070094;
+        public static final int progressBarBattery=0x7f07007a;
+        public static final int progressBarBrightness=0x7f070096;
         public static final int progressBarCPU0=0x7f070023;
         public static final int progressBarCPU1=0x7f070029;
         public static final int progressBarCPU2=0x7f07002f;
@@ -807,41 +807,41 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int progressBarCPU5=0x7f070041;
         public static final int progressBarCPU6=0x7f070047;
         public static final int progressBarCPU7=0x7f07004d;
-        public static final int progressBarRamMenu=0x7f070085;
-        public static final int progressBarSdCpuMenu=0x7f07007f;
-        public static final int progressBarSdExternal=0x7f070074;
-        public static final int progressBarSdInternal=0x7f070070;
-        public static final int progressBarSdInternalMenu=0x7f07009a;
-        public static final int progressBarWidgetCore1=0x7f0700ed;
-        public static final int progressBarWidgetCore2=0x7f0700f4;
-        public static final int progressBarWidgetCore3=0x7f0700fb;
-        public static final int progressBarWidgetCore4=0x7f070102;
-        public static final int progressBarrampercent=0x7f0700c9;
+        public static final int progressBarRamMenu=0x7f070087;
+        public static final int progressBarSdCpuMenu=0x7f070081;
+        public static final int progressBarSdExternal=0x7f070076;
+        public static final int progressBarSdInternal=0x7f070072;
+        public static final int progressBarSdInternalMenu=0x7f07009c;
+        public static final int progressBarWidgetCore1=0x7f0700ef;
+        public static final int progressBarWidgetCore2=0x7f0700f6;
+        public static final int progressBarWidgetCore3=0x7f0700fd;
+        public static final int progressBarWidgetCore4=0x7f070104;
+        public static final int progressBarrampercent=0x7f0700cb;
         public static final int radio0=0x7f070055;
         public static final int radio1=0x7f070056;
         public static final int radio2=0x7f070057;
         public static final int radio3=0x7f070058;
         public static final int radioGroup1=0x7f070054;
-        public static final int screenICon=0x7f070119;
-        public static final int screenSignal=0x7f07011a;
-        public static final int screenTest1=0x7f07011b;
-        public static final int screenTest2=0x7f07011c;
+        public static final int screenICon=0x7f07011a;
+        public static final int screenSignal=0x7f07011b;
+        public static final int screenTest1=0x7f07011c;
+        public static final int screenTest2=0x7f07011d;
         public static final int scrollCardLayout=0x7f070013;
-        public static final int spinnerCPUMax=0x7f0700be;
-        public static final int spinnerCPUMin=0x7f0700bc;
-        public static final int spinnerGoverneur=0x7f0700c0;
+        public static final int spinnerCPUMax=0x7f0700c0;
+        public static final int spinnerCPUMin=0x7f0700be;
+        public static final int spinnerGoverneur=0x7f0700c2;
         public static final int textView1=0x7f070017;
-        public static final int textView10=0x7f0700a6;
+        public static final int textView10=0x7f0700a8;
         public static final int textView2=0x7f070019;
         public static final int textView3=0x7f07001b;
-        public static final int textView4=0x7f0700a2;
-        public static final int textView5=0x7f0700a3;
-        public static final int textView6=0x7f0700aa;
-        public static final int textView7=0x7f0700a5;
-        public static final int textView8=0x7f0700a8;
-        public static final int textViewAppVersion=0x7f0700cb;
-        public static final int textViewBatteryPercentOnly=0x7f0700d5;
-        public static final int textViewBatteryPercentOnlyCharging=0x7f0700d4;
+        public static final int textView4=0x7f0700a4;
+        public static final int textView5=0x7f0700a5;
+        public static final int textView6=0x7f0700ac;
+        public static final int textView7=0x7f0700a7;
+        public static final int textView8=0x7f0700aa;
+        public static final int textViewAppVersion=0x7f0700cd;
+        public static final int textViewBatteryPercentOnly=0x7f0700d7;
+        public static final int textViewBatteryPercentOnlyCharging=0x7f0700d6;
         public static final int textViewBogo=0x7f070069;
         public static final int textViewCPU0=0x7f070020;
         public static final int textViewCPU0details=0x7f070022;
@@ -859,56 +859,57 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int textViewCPU6details=0x7f070046;
         public static final int textViewCPU7=0x7f07004a;
         public static final int textViewCPU7details=0x7f07004c;
-        public static final int textViewCore1Load=0x7f0700ee;
-        public static final int textViewCore1TempWidget=0x7f0700ec;
-        public static final int textViewCore1Widget=0x7f0700eb;
-        public static final int textViewCore2Load=0x7f0700f5;
-        public static final int textViewCore2TempWidget=0x7f0700f3;
-        public static final int textViewCore2Widget=0x7f0700f2;
-        public static final int textViewCore3Load=0x7f0700fc;
-        public static final int textViewCore3TempWidget=0x7f0700fa;
-        public static final int textViewCore3Widget=0x7f0700f9;
-        public static final int textViewCore4Load=0x7f070103;
-        public static final int textViewCore4TempWidget=0x7f070101;
-        public static final int textViewCore4Widget=0x7f070100;
+        public static final int textViewCPUTemp=0x7f07006b;
+        public static final int textViewCore1Load=0x7f0700f0;
+        public static final int textViewCore1TempWidget=0x7f0700ee;
+        public static final int textViewCore1Widget=0x7f0700ed;
+        public static final int textViewCore2Load=0x7f0700f7;
+        public static final int textViewCore2TempWidget=0x7f0700f5;
+        public static final int textViewCore2Widget=0x7f0700f4;
+        public static final int textViewCore3Load=0x7f0700fe;
+        public static final int textViewCore3TempWidget=0x7f0700fc;
+        public static final int textViewCore3Widget=0x7f0700fb;
+        public static final int textViewCore4Load=0x7f070105;
+        public static final int textViewCore4TempWidget=0x7f070103;
+        public static final int textViewCore4Widget=0x7f070102;
         public static final int textViewCurrent=0x7f07005f;
-        public static final int textViewExternalMax=0x7f070073;
-        public static final int textViewExternalMin=0x7f070072;
+        public static final int textViewExternalMax=0x7f070075;
+        public static final int textViewExternalMin=0x7f070074;
         public static final int textViewGovernor=0x7f070064;
-        public static final int textViewInternalMax=0x7f07006f;
-        public static final int textViewInternalMin=0x7f07006e;
-        public static final int textViewItem1=0x7f0700cf;
-        public static final int textViewItem2=0x7f0700d0;
-        public static final int textViewItem2Caca=0x7f070126;
-        public static final int textViewItem3=0x7f0700d1;
-        public static final int textViewItem4=0x7f07006b;
-        public static final int textViewItemCaca=0x7f070125;
-        public static final int textViewItemFreq=0x7f07006a;
+        public static final int textViewInternalMax=0x7f070071;
+        public static final int textViewInternalMin=0x7f070070;
+        public static final int textViewItem1=0x7f0700d1;
+        public static final int textViewItem2=0x7f0700d2;
+        public static final int textViewItem2Caca=0x7f070127;
+        public static final int textViewItem3=0x7f0700d3;
+        public static final int textViewItem4=0x7f07006d;
+        public static final int textViewItemCaca=0x7f070126;
+        public static final int textViewItemFreq=0x7f07006c;
         public static final int textViewMax=0x7f07005b;
-        public static final int textViewMaxFreqAllowCPU1=0x7f0700ef;
-        public static final int textViewMaxFreqAllowCPU2=0x7f0700f6;
-        public static final int textViewMaxFreqAllowCPU3=0x7f0700fd;
-        public static final int textViewMaxFreqAllowCPU4=0x7f070104;
+        public static final int textViewMaxFreqAllowCPU1=0x7f0700f1;
+        public static final int textViewMaxFreqAllowCPU2=0x7f0700f8;
+        public static final int textViewMaxFreqAllowCPU3=0x7f0700ff;
+        public static final int textViewMaxFreqAllowCPU4=0x7f070106;
         public static final int textViewMin=0x7f07005d;
-        public static final int textViewMinFreqAllowCPU1=0x7f0700f0;
-        public static final int textViewMinFreqAllowCPU2=0x7f0700f7;
-        public static final int textViewMinFreqAllowCPU3=0x7f0700fe;
-        public static final int textViewMinFreqAllowCPU4=0x7f070105;
-        public static final int textViewOverclockGoverneur=0x7f0700bf;
-        public static final int textViewOverclockMax=0x7f0700bd;
-        public static final int textViewOverclockMin=0x7f0700bb;
-        public static final int textViewOverclockTitle=0x7f0700ba;
+        public static final int textViewMinFreqAllowCPU1=0x7f0700f2;
+        public static final int textViewMinFreqAllowCPU2=0x7f0700f9;
+        public static final int textViewMinFreqAllowCPU3=0x7f070100;
+        public static final int textViewMinFreqAllowCPU4=0x7f070107;
+        public static final int textViewOverclockGoverneur=0x7f0700c1;
+        public static final int textViewOverclockMax=0x7f0700bf;
+        public static final int textViewOverclockMin=0x7f0700bd;
+        public static final int textViewOverclockTitle=0x7f0700bc;
         public static final int textViewPercentProcesses=0x7f070065;
         public static final int textViewProcessesNumbers=0x7f070067;
-        public static final int textViewProgressBarBattery=0x7f070079;
-        public static final int textViewProgressBarBrightnessText=0x7f070095;
-        public static final int textViewProgressBarCpuMenuText=0x7f070080;
-        public static final int textViewProgressBarRamMenu=0x7f070086;
-        public static final int textViewProgressBarSdExternal=0x7f070075;
-        public static final int textViewProgressBarSdInternal=0x7f070071;
-        public static final int textViewProgressBarSdInternalMenu=0x7f07009b;
-        public static final int textViewRamMo=0x7f0700c4;
-        public static final int textViewRamUsingSize=0x7f0700c6;
+        public static final int textViewProgressBarBattery=0x7f07007b;
+        public static final int textViewProgressBarBrightnessText=0x7f070097;
+        public static final int textViewProgressBarCpuMenuText=0x7f070082;
+        public static final int textViewProgressBarRamMenu=0x7f070088;
+        public static final int textViewProgressBarSdExternal=0x7f070077;
+        public static final int textViewProgressBarSdInternal=0x7f070073;
+        public static final int textViewProgressBarSdInternalMenu=0x7f07009d;
+        public static final int textViewRamMo=0x7f0700c6;
+        public static final int textViewRamUsingSize=0x7f0700c8;
         public static final int textViewUseCpu0Info=0x7f070024;
         public static final int textViewUseCpu1Info=0x7f07002a;
         public static final int textViewUseCpu2Info=0x7f070030;
@@ -918,28 +919,28 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int textViewUseCpu6Info=0x7f070048;
         public static final int textViewUseCpu7Info=0x7f07004e;
         public static final int textViewUseCpuInfo=0x7f070062;
-        public static final int textViewrampercent=0x7f0700ca;
-        public static final int textViewramsize=0x7f0700c8;
-        public static final int toggleButton1=0x7f0700ac;
-        public static final int toggleButton2=0x7f0700ae;
-        public static final int toggleButton3=0x7f0700b1;
-        public static final int toggleButton4=0x7f0700b4;
-        public static final int toggleButton5=0x7f0700b7;
+        public static final int textViewrampercent=0x7f0700cc;
+        public static final int textViewramsize=0x7f0700ca;
+        public static final int toggleButton1=0x7f0700ae;
+        public static final int toggleButton2=0x7f0700b0;
+        public static final int toggleButton3=0x7f0700b3;
+        public static final int toggleButton4=0x7f0700b6;
+        public static final int toggleButton5=0x7f0700b9;
         public static final int top=0x7f070004;
         public static final int triangle=0x7f070001;
         public static final int underline=0x7f070002;
-        public static final int updatesystemsetting=0x7f070123;
+        public static final int updatesystemsetting=0x7f070124;
         public static final int widget54=0x7f07001e;
-        public static final int widget55=0x7f0700b9;
-        public static final int wifi=0x7f0700e5;
-        public static final int wifi2=0x7f070107;
-        public static final int wifiICon=0x7f07010c;
-        public static final int wifiTest1=0x7f07010e;
-        public static final int wifiTest2=0x7f07010f;
-        public static final int wifiTest3=0x7f070110;
-        public static final int wifiTest4=0x7f070111;
-        public static final int wifiTest5=0x7f070112;
-        public static final int wirelessIConTitle=0x7f070088;
+        public static final int widget55=0x7f0700bb;
+        public static final int wifi=0x7f0700e7;
+        public static final int wifi2=0x7f070108;
+        public static final int wifiICon=0x7f07010d;
+        public static final int wifiTest1=0x7f07010f;
+        public static final int wifiTest2=0x7f070110;
+        public static final int wifiTest3=0x7f070111;
+        public static final int wifiTest4=0x7f070112;
+        public static final int wifiTest5=0x7f070113;
+        public static final int wirelessIConTitle=0x7f07008a;
     }
     public static final class integer {
         public static final int default_circle_indicator_orientation=0x7f0a0000;
@@ -1084,8 +1085,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CirclePageIndicator_android_background MaximumWidget.com:android_background}</code></td><td> View background </td></tr>
-           <tr><td><code>{@link #CirclePageIndicator_android_orientation MaximumWidget.com:android_orientation}</code></td><td> Orientation of the indicator.</td></tr>
+           <tr><td><code>{@link #CirclePageIndicator_android_background android:background}</code></td><td> View background </td></tr>
+           <tr><td><code>{@link #CirclePageIndicator_android_orientation android:orientation}</code></td><td> Orientation of the indicator.</td></tr>
            <tr><td><code>{@link #CirclePageIndicator_centered MaximumWidget.com:centered}</code></td><td> Whether or not the indicators should be centered.</td></tr>
            <tr><td><code>{@link #CirclePageIndicator_fillColor MaximumWidget.com:fillColor}</code></td><td> Color of the filled circle that represents the current page.</td></tr>
            <tr><td><code>{@link #CirclePageIndicator_pageColor MaximumWidget.com:pageColor}</code></td><td> Color of the filled circles that represents pages.</td></tr>
@@ -1113,16 +1114,18 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>
           @attr description
            View background 
-          <p>This corresponds to the global attribute          resource symbol {@link MaximumWidget.com.R.attr#android_background}.
-          @attr name android:android_background
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#background}.
+          @attr name android:background
         */
         public static final int CirclePageIndicator_android_background = 1;
         /**
           <p>
           @attr description
            Orientation of the indicator. 
-          <p>This corresponds to the global attribute          resource symbol {@link MaximumWidget.com.R.attr#android_orientation}.
-          @attr name android:android_orientation
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#orientation}.
+          @attr name android:orientation
         */
         public static final int CirclePageIndicator_android_orientation = 0;
         /**
@@ -1138,7 +1141,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:centered
+          @attr name MaximumWidget.com:centered
         */
         public static final int CirclePageIndicator_centered = 2;
         /**
@@ -1155,7 +1158,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:fillColor
+          @attr name MaximumWidget.com:fillColor
         */
         public static final int CirclePageIndicator_fillColor = 4;
         /**
@@ -1172,7 +1175,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:pageColor
+          @attr name MaximumWidget.com:pageColor
         */
         public static final int CirclePageIndicator_pageColor = 5;
         /**
@@ -1190,7 +1193,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:radius
+          @attr name MaximumWidget.com:radius
         */
         public static final int CirclePageIndicator_radius = 6;
         /**
@@ -1206,7 +1209,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:snap
+          @attr name MaximumWidget.com:snap
         */
         public static final int CirclePageIndicator_snap = 7;
         /**
@@ -1223,7 +1226,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:strokeColor
+          @attr name MaximumWidget.com:strokeColor
         */
         public static final int CirclePageIndicator_strokeColor = 8;
         /**
@@ -1241,7 +1244,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:strokeWidth
+          @attr name MaximumWidget.com:strokeWidth
         */
         public static final int CirclePageIndicator_strokeWidth = 3;
         /** Attributes that can be used with a LinePageIndicator.
@@ -1250,7 +1253,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LinePageIndicator_android_background MaximumWidget.com:android_background}</code></td><td> View background </td></tr>
+           <tr><td><code>{@link #LinePageIndicator_android_background android:background}</code></td><td> View background </td></tr>
            <tr><td><code>{@link #LinePageIndicator_centered MaximumWidget.com:centered}</code></td><td> Whether or not the indicators should be centered.</td></tr>
            <tr><td><code>{@link #LinePageIndicator_gapWidth MaximumWidget.com:gapWidth}</code></td><td> Width of the gap between each indicator line.</td></tr>
            <tr><td><code>{@link #LinePageIndicator_lineWidth MaximumWidget.com:lineWidth}</code></td><td> Width of each indicator line.</td></tr>
@@ -1274,8 +1277,9 @@ containing a value of this type.
           <p>
           @attr description
            View background 
-          <p>This corresponds to the global attribute          resource symbol {@link MaximumWidget.com.R.attr#android_background}.
-          @attr name android:android_background
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#background}.
+          @attr name android:background
         */
         public static final int LinePageIndicator_android_background = 0;
         /**
@@ -1291,7 +1295,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:centered
+          @attr name MaximumWidget.com:centered
         */
         public static final int LinePageIndicator_centered = 1;
         /**
@@ -1309,7 +1313,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:gapWidth
+          @attr name MaximumWidget.com:gapWidth
         */
         public static final int LinePageIndicator_gapWidth = 6;
         /**
@@ -1327,7 +1331,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:lineWidth
+          @attr name MaximumWidget.com:lineWidth
         */
         public static final int LinePageIndicator_lineWidth = 5;
         /**
@@ -1344,7 +1348,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:selectedColor
+          @attr name MaximumWidget.com:selectedColor
         */
         public static final int LinePageIndicator_selectedColor = 2;
         /**
@@ -1362,7 +1366,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:strokeWidth
+          @attr name MaximumWidget.com:strokeWidth
         */
         public static final int LinePageIndicator_strokeWidth = 3;
         /**
@@ -1379,7 +1383,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:unselectedColor
+          @attr name MaximumWidget.com:unselectedColor
         */
         public static final int LinePageIndicator_unselectedColor = 4;
         /** Attributes that can be used with a TitlePageIndicator.
@@ -1388,9 +1392,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TitlePageIndicator_android_background MaximumWidget.com:android_background}</code></td><td> View background </td></tr>
-           <tr><td><code>{@link #TitlePageIndicator_android_textColor MaximumWidget.com:android_textColor}</code></td><td> Color of regular titles.</td></tr>
-           <tr><td><code>{@link #TitlePageIndicator_android_textSize MaximumWidget.com:android_textSize}</code></td><td> Size of title text.</td></tr>
+           <tr><td><code>{@link #TitlePageIndicator_android_background android:background}</code></td><td> View background </td></tr>
+           <tr><td><code>{@link #TitlePageIndicator_android_textColor android:textColor}</code></td><td> Color of regular titles.</td></tr>
+           <tr><td><code>{@link #TitlePageIndicator_android_textSize android:textSize}</code></td><td> Size of title text.</td></tr>
            <tr><td><code>{@link #TitlePageIndicator_clipPadding MaximumWidget.com:clipPadding}</code></td><td> Screen edge padding.</td></tr>
            <tr><td><code>{@link #TitlePageIndicator_footerColor MaximumWidget.com:footerColor}</code></td><td> Color of the footer line and indicator.</td></tr>
            <tr><td><code>{@link #TitlePageIndicator_footerIndicatorHeight MaximumWidget.com:footerIndicatorHeight}</code></td><td> Height of the indicator above the footer line.</td></tr>
@@ -1430,24 +1434,27 @@ containing a value of this type.
           <p>
           @attr description
            View background 
-          <p>This corresponds to the global attribute          resource symbol {@link MaximumWidget.com.R.attr#android_background}.
-          @attr name android:android_background
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#background}.
+          @attr name android:background
         */
         public static final int TitlePageIndicator_android_background = 2;
         /**
           <p>
           @attr description
            Color of regular titles. 
-          <p>This corresponds to the global attribute          resource symbol {@link MaximumWidget.com.R.attr#android_textColor}.
-          @attr name android:android_textColor
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#textColor}.
+          @attr name android:textColor
         */
         public static final int TitlePageIndicator_android_textColor = 1;
         /**
           <p>
           @attr description
            Size of title text. 
-          <p>This corresponds to the global attribute          resource symbol {@link MaximumWidget.com.R.attr#android_textSize}.
-          @attr name android:android_textSize
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#textSize}.
+          @attr name android:textSize
         */
         public static final int TitlePageIndicator_android_textSize = 0;
         /**
@@ -1465,7 +1472,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:clipPadding
+          @attr name MaximumWidget.com:clipPadding
         */
         public static final int TitlePageIndicator_clipPadding = 4;
         /**
@@ -1482,7 +1489,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:footerColor
+          @attr name MaximumWidget.com:footerColor
         */
         public static final int TitlePageIndicator_footerColor = 5;
         /**
@@ -1500,7 +1507,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:footerIndicatorHeight
+          @attr name MaximumWidget.com:footerIndicatorHeight
         */
         public static final int TitlePageIndicator_footerIndicatorHeight = 8;
         /**
@@ -1520,7 +1527,7 @@ containing a value of this type.
 <tr><td><code>underline</code></td><td>2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name android:footerIndicatorStyle
+          @attr name MaximumWidget.com:footerIndicatorStyle
         */
         public static final int TitlePageIndicator_footerIndicatorStyle = 7;
         /**
@@ -1538,7 +1545,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:footerIndicatorUnderlinePadding
+          @attr name MaximumWidget.com:footerIndicatorUnderlinePadding
         */
         public static final int TitlePageIndicator_footerIndicatorUnderlinePadding = 9;
         /**
@@ -1556,7 +1563,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:footerLineHeight
+          @attr name MaximumWidget.com:footerLineHeight
         */
         public static final int TitlePageIndicator_footerLineHeight = 6;
         /**
@@ -1574,7 +1581,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:footerPadding
+          @attr name MaximumWidget.com:footerPadding
         */
         public static final int TitlePageIndicator_footerPadding = 10;
         /**
@@ -1593,7 +1600,7 @@ containing a value of this type.
 <tr><td><code>top</code></td><td>1</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name android:linePosition
+          @attr name MaximumWidget.com:linePosition
         */
         public static final int TitlePageIndicator_linePosition = 11;
         /**
@@ -1609,7 +1616,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:selectedBold
+          @attr name MaximumWidget.com:selectedBold
         */
         public static final int TitlePageIndicator_selectedBold = 12;
         /**
@@ -1626,7 +1633,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:selectedColor
+          @attr name MaximumWidget.com:selectedColor
         */
         public static final int TitlePageIndicator_selectedColor = 3;
         /**
@@ -1644,7 +1651,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:titlePadding
+          @attr name MaximumWidget.com:titlePadding
         */
         public static final int TitlePageIndicator_titlePadding = 13;
         /**
@@ -1662,7 +1669,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:topPadding
+          @attr name MaximumWidget.com:topPadding
         */
         public static final int TitlePageIndicator_topPadding = 14;
         /** Attributes that can be used with a UnderlinePageIndicator.
@@ -1671,7 +1678,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #UnderlinePageIndicator_android_background MaximumWidget.com:android_background}</code></td><td> View background </td></tr>
+           <tr><td><code>{@link #UnderlinePageIndicator_android_background android:background}</code></td><td> View background </td></tr>
            <tr><td><code>{@link #UnderlinePageIndicator_fadeDelay MaximumWidget.com:fadeDelay}</code></td><td> Length of the delay to fade the indicator.</td></tr>
            <tr><td><code>{@link #UnderlinePageIndicator_fadeLength MaximumWidget.com:fadeLength}</code></td><td> Length of the indicator fade to transparent.</td></tr>
            <tr><td><code>{@link #UnderlinePageIndicator_fades MaximumWidget.com:fades}</code></td><td> Whether or not the selected indicator fades.</td></tr>
@@ -1691,8 +1698,9 @@ containing a value of this type.
           <p>
           @attr description
            View background 
-          <p>This corresponds to the global attribute          resource symbol {@link MaximumWidget.com.R.attr#android_background}.
-          @attr name android:android_background
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#background}.
+          @attr name android:background
         */
         public static final int UnderlinePageIndicator_android_background = 0;
         /**
@@ -1708,7 +1716,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:fadeDelay
+          @attr name MaximumWidget.com:fadeDelay
         */
         public static final int UnderlinePageIndicator_fadeDelay = 3;
         /**
@@ -1724,7 +1732,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:fadeLength
+          @attr name MaximumWidget.com:fadeLength
         */
         public static final int UnderlinePageIndicator_fadeLength = 4;
         /**
@@ -1740,7 +1748,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:fades
+          @attr name MaximumWidget.com:fades
         */
         public static final int UnderlinePageIndicator_fades = 2;
         /**
@@ -1757,7 +1765,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:selectedColor
+          @attr name MaximumWidget.com:selectedColor
         */
         public static final int UnderlinePageIndicator_selectedColor = 1;
         /** Attributes that can be used with a ViewPagerIndicator.
@@ -1793,7 +1801,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:vpiCirclePageIndicatorStyle
+          @attr name MaximumWidget.com:vpiCirclePageIndicatorStyle
         */
         public static final int ViewPagerIndicator_vpiCirclePageIndicatorStyle = 0;
         /**
@@ -1805,7 +1813,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:vpiIconPageIndicatorStyle
+          @attr name MaximumWidget.com:vpiIconPageIndicatorStyle
         */
         public static final int ViewPagerIndicator_vpiIconPageIndicatorStyle = 1;
         /**
@@ -1817,7 +1825,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:vpiLinePageIndicatorStyle
+          @attr name MaximumWidget.com:vpiLinePageIndicatorStyle
         */
         public static final int ViewPagerIndicator_vpiLinePageIndicatorStyle = 2;
         /**
@@ -1829,7 +1837,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:vpiTabPageIndicatorStyle
+          @attr name MaximumWidget.com:vpiTabPageIndicatorStyle
         */
         public static final int ViewPagerIndicator_vpiTabPageIndicatorStyle = 4;
         /**
@@ -1841,7 +1849,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:vpiTitlePageIndicatorStyle
+          @attr name MaximumWidget.com:vpiTitlePageIndicatorStyle
         */
         public static final int ViewPagerIndicator_vpiTitlePageIndicatorStyle = 3;
         /**
@@ -1853,7 +1861,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:vpiUnderlinePageIndicatorStyle
+          @attr name MaximumWidget.com:vpiUnderlinePageIndicatorStyle
         */
         public static final int ViewPagerIndicator_vpiUnderlinePageIndicatorStyle = 5;
     };

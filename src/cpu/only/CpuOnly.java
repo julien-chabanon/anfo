@@ -11,6 +11,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.PowerManager;
+import utils.getCPU;
 import android.widget.RemoteViews;
 import android.widget.Toast;
 import application.CPUstatSmall;
@@ -112,7 +113,7 @@ public class CpuOnly extends AppWidgetProvider {
 
 	   		    
 	   		//Set the text with the current time.
-	   		  SystemUtils cpu = new SystemUtils();
+	   		 getCPU cpu = new getCPU();
 	   			try {
 	   		   	
 	   			 cpu_max = cpu.getCPUFrequencyMax()/1000;

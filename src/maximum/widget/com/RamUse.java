@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import utils.getCPU;
 
 
 public class RamUse extends Activity {
@@ -15,7 +16,7 @@ public class RamUse extends Activity {
 	private ProgressBar mProgress;
     private int mProgressStatus = 0;
     private Handler mHandler = new Handler();
-    SystemUtils cpu = new SystemUtils();
+    getCPU cpu = new getCPU();
     TextView use;
     TextView max;
     TextView current;

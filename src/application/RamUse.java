@@ -1,6 +1,7 @@
 package application;
 
 import MaximumWidget.com.R;
+import utils.getCPU;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -12,7 +13,6 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import maximum.widget.com.memory;
-
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -23,7 +23,7 @@ public class RamUse extends Fragment {
 	private ProgressBar mProgress;
     private int mProgressStatus = 0;
     private Handler mHandler = new Handler();
-    SystemUtils cpu = new SystemUtils();
+    getCPU cpu = new getCPU();
     TextView use;
     TextView max;
     TextView current;

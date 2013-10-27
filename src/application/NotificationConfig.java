@@ -1,6 +1,7 @@
 package application;
 
 import MaximumWidget.com.R;
+import utils.getCPU;
 import android.app.*;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -19,7 +20,7 @@ public class NotificationConfig extends Fragment {
 	
 	int HELLO_ID = 1;
 	int icon;
-	SystemUtils cpu = new SystemUtils();
+	getCPU cpu = new getCPU();
 	String cpuLoad = new String("CPULoad");
 	String cpuCore = new String("CPUCore");
 	String cpuFreq = new String("CPUFreq");
