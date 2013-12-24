@@ -3,6 +3,7 @@ package application;
 import MaximumWidget.com.R;
 import utils.getDisk;
 import utils.getCPU;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.content.BroadcastReceiver;
@@ -32,22 +33,40 @@ import maximum.widget.com.memory;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class HomeCards extends Fragment {
+import com.actionbarsherlock.app.SherlockFragment;
+
+
+@SuppressLint("ValidFragment")
+public class HomeCards extends SherlockFragment {
 	
 	private static final String KEY_CONTENT = "TestFragment:Content";
+	
+	
+	
+	private int mPos = -1;
+	private int mImgRes;
+	
+	public HomeCards() { }
+	public HomeCards(int pos) {
+		mPos = pos;
+	}
+	
 
-    public static HomeCards newInstance(String content) {
-    	HomeCards fragment = new HomeCards();
-
-        StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < 20; i++) {
-            builder.append(content).append(" ");
-        }
-        builder.deleteCharAt(builder.length() - 1);
-        fragment.mContent = builder.toString();
-
-        return fragment;
+    public static Intent newInstance(Activity activity, int pos) {
+    	Intent intent = new Intent(activity, HomeCards.class);
+		intent.putExtra("pos", pos);
+		return intent;
     }
+    
+    
+    @Override
+	public void onSaveInstanceState(Bundle outState) {
+		super.onSaveInstanceState(outState);
+		outState.putInt("mPos", mPos);
+	}
+    
+    
+
     
     
 
@@ -250,9 +269,6 @@ public class HomeCards extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if ((savedInstanceState != null) && savedInstanceState.containsKey(KEY_CONTENT)) {
-            mContent = savedInstanceState.getString(KEY_CONTENT);
-        }
     }
 
 	@Override

@@ -46,7 +46,7 @@ public class SmashScreen extends Activity {
                 finish();
                 // start the home screen
  
-                Intent intent = new Intent(SmashScreen.this, SliderActivity.class);
+                Intent intent = new Intent(SmashScreen.this, SlidingBar.class);
                 SmashScreen.this.startActivity(intent);
  
             }

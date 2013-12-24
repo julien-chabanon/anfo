@@ -2,7 +2,10 @@ package application;
 
 import MaximumWidget.com.R;
 import utils.getCPU;
+import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -12,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+@SuppressLint("ValidFragment")
 public class CpuInfo extends Fragment {
 	
 	private ProgressBar mProgress;
@@ -41,28 +45,31 @@ public class CpuInfo extends Fragment {
 
 	private static final String KEY_CONTENT = "TestFragment:Content";
 
-    public static CpuInfo newInstance(String content) {
-    	CpuInfo fragment = new CpuInfo();
+	private int mPos = -1;
+	private int mImgRes;
+	
+	public CpuInfo() { }
+	public CpuInfo(int pos) {
+		mPos = pos;
+	}
+	
 
-        StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < 20; i++) {
-            builder.append(content).append(" ");
-        }
-        builder.deleteCharAt(builder.length() - 1);
-        fragment.mContent = builder.toString();
-
-        return fragment;
+    public static Intent newInstance(Activity activity, int pos) {
+    	Intent intent = new Intent(activity, CpuInfo.class);
+		intent.putExtra("pos", pos);
+		return intent;
     }
-
-    private String mContent = "???";
+    
+    
+    @Override
+	public void onSaveInstanceState(Bundle outState) {
+		super.onSaveInstanceState(outState);
+		outState.putInt("mPos", mPos);
+	}
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        if ((savedInstanceState != null) && savedInstanceState.containsKey(KEY_CONTENT)) {
-            mContent = savedInstanceState.getString(KEY_CONTENT);
-        } 
         
     }
     

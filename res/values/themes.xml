@@ -11,6 +11,24 @@
 	<style name="CustomDialogAnimationTheme" parent="@android:style/Theme.Dialog">
 		<item name="android:windowAnimationStyle">@style/CustomDialogAnim</item>
 	</style>
+	
+	
+	<style name="AnfoTheme" parent="Theme.Sherlock.Light">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="actionBarStyle">@style/ActionBar</item>    
+    </style>
+ 
+   
+    <style name="ActionBar" parent="Widget.Sherlock.ActionBar">
+        <item name="background">@layout/action_bar_shape</item>
+        <item name="android:background">@layout/action_bar_shape</item>
+    </style>
+ 
+    <style name="MyTheme.TitleTextStyle" parent="@style/TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>
  
     

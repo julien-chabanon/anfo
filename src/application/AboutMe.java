@@ -1,8 +1,12 @@
 package application;
 
 import MaximumWidget.com.R;
+import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,33 +15,43 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
+@SuppressLint("ValidFragment")
 public class AboutMe extends Fragment {
 
 	private static final String KEY_CONTENT = "TestFragment:Content";
 
-    public static AboutMe newInstance(String content) {
-    	AboutMe fragment = new AboutMe();
+    
+	private int mPos = -1;
+	private int mImgRes;
+	
+	public AboutMe() { }
+	public AboutMe(int pos) {
+		mPos = pos;
+	}
+	
 
-        StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < 20; i++) {
-            builder.append(content).append(" ");
-        } 
-        builder.deleteCharAt(builder.length() - 1);
-        fragment.mContent = builder.toString();
-
-        return fragment;
+    public static Intent newInstance(Activity activity, int pos) {
+    	Intent intent = new Intent(activity, AboutMe.class);
+		intent.putExtra("pos", pos);
+		return intent;
     }
-
+    
+    
+    @Override
+	public void onSaveInstanceState(Bundle outState) {
+		super.onSaveInstanceState(outState);
+		outState.putInt("mPos", mPos);
+	}
+    
+	
     private String mContent = "???";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if ((savedInstanceState != null) && savedInstanceState.containsKey(KEY_CONTENT)) {
-            mContent = savedInstanceState.getString(KEY_CONTENT);
-        }
     }
 
 	@Override
@@ -45,8 +59,8 @@ public class AboutMe extends Fragment {
 			Bundle savedInstanceState) {
 		
 		View myFragmentView = inflater.inflate(R.layout.activity_about_me, container, false);
-		
 		Context context = getActivity();
+		
 		
 		
 //--------------------------------LIKE FACEBOOK-------------------------------------------------------------------------------------------------------------------

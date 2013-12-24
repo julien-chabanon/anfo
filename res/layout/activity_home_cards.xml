@@ -1,7 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="#CCCCCC"
+              android:layout_height="wrap_content"
+              android:background="#E3E3E3"
               android:orientation="vertical">
 
     <ScrollView
@@ -17,20 +17,17 @@
             android:padding="15dip">
             
             
-            
-            
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" 
                 android:paddingBottom="10dip">
 
                 <LinearLayout
-                    android:id="@+id/linearLayout1"
+                    android:id="@+id/card"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@layout/shape_card"
-                    android:padding="10dip"
+                    android:padding="15dip"
                     android:orientation="vertical" >
 
                     <LinearLayout
@@ -109,6 +106,9 @@
                 </LinearLayout>
 
             </RelativeLayout>
+            
+
+            
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -120,7 +120,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@layout/shape_card"
-                    android:padding="10dip"
+                    android:padding="15dip"
                     android:orientation="vertical" >
 
                     <LinearLayout
@@ -222,6 +222,11 @@
                 </LinearLayout>
             </RelativeLayout>
             
+            
+            
+            
+            
+            
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" 
@@ -232,7 +237,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@layout/shape_card"
-                    android:padding="10dip"
+                    android:padding="15dip"
                     android:orientation="vertical" >
 
                     <LinearLayout
@@ -345,7 +350,7 @@
                     android:id="@+id/linearLayout7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="10dip"
+                    android:padding="15dip"
                     android:background="@layout/shape_card"
                     android:orientation="vertical" >
                     
@@ -538,7 +543,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@layout/shape_card"
-                    android:padding="10dip"
+                    android:padding="15dip"
                     android:orientation="vertical" >
 
                     <LinearLayout
@@ -615,7 +620,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@layout/shape_card"
-                    android:padding="10dip"
+                    android:padding="15dip"
                     android:orientation="vertical" >
 
                     <LinearLayout

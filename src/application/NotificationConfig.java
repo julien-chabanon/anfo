@@ -2,6 +2,7 @@ package application;
 
 import MaximumWidget.com.R;
 import utils.getCPU;
+import android.annotation.SuppressLint;
 import android.app.*;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -16,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.ToggleButton;
 
+@SuppressLint("ValidFragment")
 public class NotificationConfig extends Fragment {
 	
 	int HELLO_ID = 1;
@@ -48,28 +50,31 @@ public class NotificationConfig extends Fragment {
 	private static final String KEY_CONTENT = "TestFragment:Content";
 	private String mContent = "???";
 
-    public static NotificationConfig newInstance(String content) {
-    	NotificationConfig fragment = new NotificationConfig();
+	private int mPos = -1;
+	private int mImgRes;
+	
+	public NotificationConfig() { }
+	public NotificationConfig(int pos) {
+		mPos = pos;
+	}
+	
 
-        StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < 20; i++) {
-            builder.append(content).append(" ");
-        }
-        builder.deleteCharAt(builder.length() - 1);
-        fragment.mContent = builder.toString();
-
-        return fragment;
+    public static Intent newInstance(Activity activity, int pos) {
+    	Intent intent = new Intent(activity, NotificationConfig.class);
+		intent.putExtra("pos", pos);
+		return intent;
     }
-
     
+    
+    @Override
+	public void onSaveInstanceState(Bundle outState) {
+		super.onSaveInstanceState(outState);
+		outState.putInt("mPos", mPos);
+	}
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        if ((savedInstanceState != null) && savedInstanceState.containsKey(KEY_CONTENT)) {
-            mContent = savedInstanceState.getString(KEY_CONTENT);
-        } 
         
     }
     

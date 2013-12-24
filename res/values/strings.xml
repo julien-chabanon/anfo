@@ -27,5 +27,10 @@
     <string name="title_activity_anfo_premium">AnfoPremium</string>
     <string name="title_activity_home_cards">HomeCards</string>
     <string name="title_activity_about_me">AboutMe</string>
+    <string name="title_activity_sliding_menu">SlidingMenu</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu_fragment">MenuFragment</string>
+    <string name="title_activity_sliding_utils">SlidingUtils</string>
+    <string name="title_activity_menu_list">MenuList</string>
 
 </resources>

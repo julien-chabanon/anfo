@@ -57,7 +57,7 @@ public class MenuFragment extends Fragment {
 		{
  
 			// Create fragment and give it an argument specifying the article it should show
-        	Fragment newFragment = Main.newInstance("Menu");
+        	Fragment newFragment = MenuList.newInstance("Menu");
         	Bundle args = new Bundle();
         	newFragment.setArguments(args);
 
@@ -75,7 +75,7 @@ public class MenuFragment extends Fragment {
 		else
 		{
 			// Create an instance of ExampleFragment
-	        Fragment firstFragment = Main.newInstance("Menu");
+	        Fragment firstFragment = MenuList.newInstance("Menu");
 	            
 			getFragmentManager().beginTransaction()
             .add(R.id.fragment_container, firstFragment).commit();

@@ -18,7 +18,7 @@ public class AlarmManagerBroadcastReceiver extends BroadcastReceiver {
    	ToggleWidget bg = new ToggleWidget();
 
  @Override
- public void onReceive(Context context, Intent intent) {
+ public void onReceive(Context context, Intent intent) { 
 	 
 	 
 	

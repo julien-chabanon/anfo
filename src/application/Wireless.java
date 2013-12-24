@@ -6,6 +6,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Point;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
@@ -32,6 +33,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 
+@SuppressLint("ValidFragment")
 public class Wireless extends Fragment {
 	
 
@@ -92,28 +94,31 @@ public class Wireless extends Fragment {
 
 		private static final String KEY_CONTENT = "TestFragment:Content";
 
-	    public static Wireless newInstance(String content) {
-	    	Wireless fragment = new Wireless();
+		private int mPos = -1;
+		private int mImgRes;
+		
+		public Wireless() { }
+		public Wireless(int pos) {
+			mPos = pos;
+		}
+		
 
-	        StringBuilder builder = new StringBuilder();
-	        for (int i = 0; i < 20; i++) {
-	            builder.append(content).append(" ");
-	        }
-	        builder.deleteCharAt(builder.length() - 1);
-	        fragment.mContent = builder.toString();
-
-	        return fragment;
+	    public static Intent newInstance(Activity activity, int pos) {
+	    	Intent intent = new Intent(activity, Wireless.class);
+			intent.putExtra("pos", pos);
+			return intent;
 	    }
-
-	    private String mContent = "???";
+	    
+	    
+	    @Override
+		public void onSaveInstanceState(Bundle outState) {
+			super.onSaveInstanceState(outState);
+			outState.putInt("mPos", mPos);
+		}
 
 	    @Override
 	    public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
-
-	        if ((savedInstanceState != null) && savedInstanceState.containsKey(KEY_CONTENT)) {
-	            mContent = savedInstanceState.getString(KEY_CONTENT);
-	        } 
 	        
 	    }
 	    

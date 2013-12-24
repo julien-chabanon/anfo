@@ -1025,6 +1025,63 @@ public class asynctask extends AsyncTask<Void, Integer, Void>
 		}
 	 
 	 
+	 
+	 @SuppressLint("NewApi")
+		public void notificationCpuTemperature(Context context,int logo,int cpuTemperature) 
+		 {
+			    int api = Integer.valueOf(android.os.Build.VERSION.SDK);
+			    
+			    if(api>=14)
+			    {
+			    	NotificationManager mNotificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+			    	Notification.Builder builder = new Notification.Builder(context);
+			    	
+			    	Intent intent = new Intent(context, CpuInfo.class);
+			    	  PendingIntent pendingIntent 
+			    	  = PendingIntent.getActivity(context, 0, intent, 0);
+			    	
+			    	 builder
+			        .setContentTitle("Anfo CPU temperature")
+			        .setContentText("CPU temperature: " + cpuTemperature + "°C")
+			        .setSmallIcon(logo)
+			        .setContentIntent(pendingIntent)
+			        .setOngoing(true)
+			        .setAutoCancel(false)
+			        .setProgress(101,cpuTemperature,false)
+			        .setWhen(when+300); 	
+			    	 
+			    	  Notification notification = builder.getNotification();
+			    	  notification.flags |= Notification.FLAG_ONGOING_EVENT; 
+			    	  notification.flags |= Notification.FLAG_ONLY_ALERT_ONCE;
+			    	  
+			    	  mNotificationManager.notify(1, notification);
+			    }
+			    
+			    else
+			    {
+			    NotificationManager mNotificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+
+			    int icon = logo;
+			     CharSequence tickerText = context.getString(R.string.app_name);     
+			     
+			     
+			    final Notification notification = new Notification(icon, "Anfo widget: CPU temperature notification enabled", when+300);
+			    notification.flags = Notification.FLAG_NO_CLEAR;
+			    notification.flags = Notification.FLAG_ONGOING_EVENT;
+			    
+			    
+			    Intent notificationIntent = new Intent(context, CpuInfo.class);
+			    PendingIntent contentIntent = PendingIntent.getActivity(context.getApplicationContext(), 0, notificationIntent, 0);
+			    
+
+			    notification.setLatestEventInfo(context, tickerText, "CPU temperature: " + cpuTemperature + "°C", contentIntent);
+			    mNotificationManager.notify(1, notification);
+			    }
+			    
+			}
+	 
+	 
+	 
 	 @SuppressLint("NewApi")
 	public void notificationStatusCpuCore(Context context,int logoCpuCore,int cpu_max_core,int cpu_active_core) 
 	 {
